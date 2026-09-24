@@ -1,0 +1,34 @@
+{
+  "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community | post. Always include the organizer's page in \"url\" so members can confirm details.",
+  "events": [
+    {
+      "title": "VA Providence Employment Resource Center Veteran Job Fair",
+      "start": "2026-10-20T13:00",
+      "end": "2026-10-20T15:00",
+      "location": "Providence VA Medical Center, Main Building 5th Floor Classrooms, 830 Chalkstone Ave, Providence",
+      "category": "benefits",
+      "description": "Free job fair connecting veterans with local employers. Contact the Employment Resource Center at 401-273-7100 ext. 13491.",
+      "url": "https://www.va.gov/providence-health-care/events/91059/",
+      "source": "VA Providence Health Care"
+    },
+    {
+      "title": "Westerly Veterans Day Parade",
+      "start": "2026-11-07T09:30",
+      "end": "2026-11-07T11:00",
+      "location": "Westerly, RI (organized by the Ocean Community Chamber of Commerce)",
+      "category": "area",
+      "description": "Check the organizer's page for the route and step-off point.",
+      "url": "https://www.oceanchamber.org/events/details/2026-veterans-day-parade-48448",
+      "source": "Ocean Community Chamber of Commerce"
+    },
+    {
+      "title": "WaterFire Salute to Veterans (14th annual)",
+      "start": "2026-11-07T15:00",
+      "location": "State House to WaterPlace Park, Providence",
+      "category": "area",
+      "description": "Opening ceremonies at the State House, torch procession, Veterans Resource Fair on Washington Street (3:00-10:00 p.m.), military vehicle display, memorial tributes at sunset and a Memorial Canoe Ceremony. About 150 veterans serve as torchbearers; sign-up and mobility assistance are on the event page.",
+      "url": "https://waterfire.org/schedule/waterfire-salute-to-veterans/",
+      "source": "WaterFire Providence"
+    }
+  ]
+}

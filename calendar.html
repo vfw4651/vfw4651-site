@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events Calendar · VFW Post 4651</title>
+<meta name="description" content="Post 4651 events plus veteran, military, benefits and community events around Rhode Island.">
+<meta name="theme-color" content="#0a2240">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230a2240'/%3E%3Ctext x='50' y='62' font-size='34' text-anchor='middle' fill='%23c9a24a' font-family='Arial' font-weight='700'%3E4651%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="calendar">
+<main id="main">
+<div class="page-head"><div class="wrap"><h1>Events Calendar</h1><p>Post and Auxiliary events, plus veteran and military happenings around Rhode Island.</p></div></div>
+
+<section class="block"><div class="wrap">
+  <div class="cal-tools">
+    <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+    <div style="display:flex;gap:.6rem;flex-wrap:wrap;align-items:center">
+      <input class="search" id="q" type="search" placeholder="Search events" aria-label="Search events">
+      <div class="seg" role="group" aria-label="View"><button type="button" data-view="list" aria-pressed="true">List</button><button type="button" data-view="month" aria-pressed="false">Month</button></div>
+      <button class="btn outline sm" id="print" type="button">Print</button>
+    </div>
+  </div>
+  <p class="note" id="errs" hidden></p>
+
+  <div id="fallback" hidden>
+    <h2>Post 4651 Calendar</h2>
+    <div id="fallback-frame"></div>
+  </div>
+  <h2 id="area-h" hidden style="margin-top:2rem">Around the area</h2>
+
+  <div id="out" aria-live="polite"></div>
+
+  <div class="subscribe" style="margin-top:2.5rem">
+    <h3>Take it with you</h3>
+    <p>Subscribe so new events show up on your phone automatically.</p>
+    <ul id="subscribe-links"></ul>
+  </div>
+  <p class="meta" style="margin-top:1rem;color:var(--muted)">Outside events are collected from public listings. Always confirm details with the organizer, and <a href="contact.html">tell us</a> about events we should add. Department of Rhode Island events: <a href="https://vfwri.org/di/vfw/v2/default.asp?pid=6013&caltype=Department" target="_blank" rel="noopener">VFW RI calendar</a>.</p>
+</div></section>
+<dialog id="dlg"><div class="inner"><button class="x" id="dlg-x" aria-label="Close">×</button><div id="dlg-body"></div></div></dialog>
+</main>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/events.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/calendar.js"></script>
+</body>
+</html>
