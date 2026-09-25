@@ -10,6 +10,7 @@
     ["mission", "our-mission.html", "Our Mission"],
     ["calendar", "calendar.html", "Calendar"],
     ["community", "community.html", "Community"],
+    ["auxiliary", "auxiliary.html", "Auxiliary"],
     ["spaces", "event-spaces.html", "Event Spaces"],
     ["contact", "contact.html", "Contact"],
     ["join", "join-us.html", "Join Us", "cta"]

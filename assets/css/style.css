@@ -162,6 +162,12 @@ form.contact label { font-weight: 600; display: grid; gap: .25rem; }
 form.contact input, form.contact textarea, form.contact select { padding: .65rem .8rem; border: 2px solid var(--line); border-radius: 8px; font: inherit; }
 form.contact input:focus, form.contact textarea:focus, .search:focus { outline: 3px solid rgba(27,79,156,.3); border-color: var(--blue); }
 
+/* Officers */
+.officer { text-align: center; }
+.officer .avatar { width: 88px; height: 88px; margin: 0 auto .9rem; border-radius: 50%; background: var(--navy); color: var(--gold); display: grid; place-items: center; font-family: var(--head); font-size: 1.6rem; letter-spacing: .04em; border: 3px solid var(--gold); }
+.officer h3 { margin-bottom: .1rem; }
+.officer .kicker { margin-bottom: .6rem; }
+
 /* Footer */
 footer { background: var(--navy); color: #b9c6db; padding: 3rem 0 1.5rem; border-top: 6px solid var(--red); }
 footer h3 { color: #fff; font-size: 1.15rem; }
