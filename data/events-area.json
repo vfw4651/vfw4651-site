@@ -12,6 +12,15 @@
       "source": "VA Providence Health Care"
     },
     {
+      "title": "OktoberVets 5K (VFW Post 152)",
+      "start": "2026-10-17T10:00",
+      "location": "Start: First Baptist Church, 44 Main St, North Kingstown; Finish: Town Docks, 61 Brown St, North Kingstown",
+      "category": "area",
+      "description": "5K race through historic Wickford Village hosted by VFW Post 152, plus a .152K fun run for all ages, with a 11:00am start wave. Proceeds benefit the Gateway to Independence veteran transitional housing program and the Holiday Veteran in Need program.",
+      "url": "https://vfwri.org/di/vfw/v2/default.asp?pid=130358",
+      "source": "VFW Department of Rhode Island"
+    },
+    {
       "title": "Westerly Veterans Day Parade",
       "start": "2026-11-07T09:30",
       "end": "2026-11-07T11:00",
@@ -29,6 +38,16 @@
       "description": "Opening ceremonies at the State House, torch procession, Veterans Resource Fair on Washington Street (3:00-10:00 p.m.), military vehicle display, memorial tributes at sunset and a Memorial Canoe Ceremony. About 150 veterans serve as torchbearers; sign-up and mobility assistance are on the event page.",
       "url": "https://waterfire.org/schedule/waterfire-salute-to-veterans/",
       "source": "WaterFire Providence"
+    },
+    {
+      "title": "Cranston Veterans Day Parade",
+      "start": "2026-11-11T11:30",
+      "end": "2026-11-11T12:30",
+      "location": "Starts on Doric Avenue behind the Pub on Park, along Park Avenue to Pontiac Avenue, north on Rolfe Street to Rolfe Square, followed by a ceremony at the Cannon Memorial, Cranston",
+      "category": "area",
+      "description": "Annual Veterans Day parade and ceremony revived as a Cranston tradition. Time/route based on the 2025 running; check the city's page closer to the date for any changes.",
+      "url": "https://www.cranstonri.gov/veterans-day-parade/",
+      "source": "City of Cranston"
     }
   ]
 }
