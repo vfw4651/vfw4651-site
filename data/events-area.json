@@ -2,13 +2,23 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community | post. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
-      "title": "VA Providence Employment Resource Center Veteran Job Fair",
-      "start": "2026-10-20T13:00",
-      "end": "2026-10-20T15:00",
-      "location": "Providence VA Medical Center, Main Building 5th Floor Classrooms, 830 Chalkstone Ave, Providence",
+      "title": "Cape Cod Stand Down for Veterans (VA Providence participating)",
+      "start": "2026-10-02T09:00",
+      "end": "2026-10-02T14:30",
+      "location": "Margaritaville Resort Cape Cod, 1225 Lyannough Road, Hyannis, MA",
       "category": "benefits",
-      "description": "Free job fair connecting veterans with local employers. Contact the Employment Resource Center at 401-273-7100 ext. 13491.",
-      "url": "https://www.va.gov/providence-health-care/events/91059/",
+      "description": "Community resource gathering organized by the Cape & Islands Veterans Outreach Center; VA Providence staff attend to connect veterans with services and VA care. Free admission.",
+      "url": "https://www.va.gov/providence-health-care/events/91623/",
+      "source": "VA Providence Health Care"
+    },
+    {
+      "title": "New Veteran Orientation: Learn, Explore and Thrive",
+      "start": "2026-10-15T11:00",
+      "end": "2026-10-15T15:00",
+      "location": "VA Providence Medical Center, Main Building 5th Floor Classrooms, 830 Chalkstone Ave, Providence",
+      "category": "benefits",
+      "description": "Enrollment & claims support (noon-1pm) followed by New Veteran Orientation (1-3pm): learn about VA services, accommodations, and claims assistance. Free, registration required. Contact Cheryl.Richard@va.gov.",
+      "url": "https://www.va.gov/providence-health-care/events/90660/",
       "source": "VA Providence Health Care"
     },
     {
@@ -19,6 +29,26 @@
       "description": "5K race through historic Wickford Village hosted by VFW Post 152, plus a .152K fun run for all ages, with a 11:00am start wave. Proceeds benefit the Gateway to Independence veteran transitional housing program and the Holiday Veteran in Need program.",
       "url": "https://vfwri.org/di/vfw/v2/default.asp?pid=130358",
       "source": "VFW Department of Rhode Island"
+    },
+    {
+      "title": "VA Providence Employment Resource Center Veteran Job Fair",
+      "start": "2026-10-20T13:00",
+      "end": "2026-10-20T15:00",
+      "location": "Providence VA Medical Center, Main Building 5th Floor Classrooms, 830 Chalkstone Ave, Providence",
+      "category": "benefits",
+      "description": "Free job fair connecting veterans with local employers. Contact the Employment Resource Center at 401-273-7100 ext. 13491.",
+      "url": "https://www.va.gov/providence-health-care/events/91059/",
+      "source": "VA Providence Health Care"
+    },
+    {
+      "title": "VA Providence Fall VetConnect",
+      "start": "2026-10-28T16:00",
+      "end": "2026-10-28T18:00",
+      "location": "VA Providence Healthcare System, 830 Chalkstone Avenue, Providence, RI",
+      "category": "benefits",
+      "description": "Veterans and families join VA Providence leadership for updates on programs and to connect with representatives from VA Enrollment and the Veterans Benefits Administration.",
+      "url": "https://discover.va.gov/events/va-providence-fall-vetconnect/",
+      "source": "VA Providence Health Care"
     },
     {
       "title": "Westerly Veterans Day Parade",
