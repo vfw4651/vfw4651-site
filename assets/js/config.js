@@ -15,6 +15,11 @@ window.SITE = {
   hours: "",                                               // e.g. "Fri–Sat 4–10 p.m."
   emblem: "assets/img/emblem.png",            // official VFW seal, added Oct 1, 2026
 
+  /* ---------- ROOM FOR RENT (5 Haven Ave) ----------
+     available: true  -> homepage banner shows, housing.html says "Available now"
+     available: false -> banner hides, housing.html says "Currently rented"     */
+  housing: { available: true, page: "housing.html" },
+
   links: {
     joinForm: "https://docs.google.com/forms/d/e/1FAIpQLSc60vdcybZhGdgXvSCTSftDnt-2YWr2RN_MvZJvyhWqJe9JiQ/viewform",
     eligibility: "https://www.vfw.org/join/eligibility",

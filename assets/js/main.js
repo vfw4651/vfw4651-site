@@ -57,6 +57,16 @@
     else el.textContent = v;
   });
 
+  // ----- room for rent: homepage banner + status on housing.html -----
+  const H = S.housing;
+  if (H) {
+    const st = document.getElementById("housing-status");
+    if (st && !H.available) st.removeAttribute("data-open");
+    const hero = document.querySelector(".hero");
+    if (H.available && hero) hero.insertAdjacentHTML("afterend",
+      `<div class="housing-banner"><div class="wrap"><span><b>Room for rent</b> at 5 Haven Ave, next to the Post. Utilities &amp; WiFi included. Veterans preferred.</span><a class="btn sm" href="${esc(H.page)}">Details</a></div></div>`);
+  }
+
   // ----- home: next events -----
   const up = document.getElementById("upcoming");
   if (up) {
