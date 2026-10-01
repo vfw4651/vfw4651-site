@@ -13,7 +13,7 @@ window.SITE = {
   email: "",                                               // add a post email (e.g. commander@vfw4651.org)
   meetings: "Last Thursday of each month, 6:00 p.m.",
   hours: "",                                               // e.g. "Fri–Sat 4–10 p.m."
-  emblem: "",                                              // e.g. "assets/img/emblem.png" (your VFW emblem file); blank = simple "4651" badge
+  emblem: "assets/img/emblem.png",            // official VFW seal, added Oct 1, 2026
 
   links: {
     joinForm: "https://docs.google.com/forms/d/e/1FAIpQLSc60vdcybZhGdgXvSCTSftDnt-2YWr2RN_MvZJvyhWqJe9JiQ/viewform",
