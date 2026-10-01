@@ -66,7 +66,15 @@ nav a.cta:hover { background: var(--navy); color: #fff; }
 .hero h1 { color: #fff; max-width: 14ch; }
 .hero .eyebrow { font-family: var(--head); letter-spacing: .18em; color: var(--gold); text-transform: uppercase; font-size: 1.05rem; margin-bottom: .6rem; }
 .hero p.lead { font-size: 1.25rem; max-width: 46ch; color: #dbe4f2; }
-.hero .stars { position: absolute; right: -40px; top: 10%; font-size: 22rem; color: rgba(201,162,74,.08); line-height: 1; user-select: none; pointer-events: none; }
+/* Faded Post sign (original vector rendition of the hall's Nelson-Mack sign) */
+.hero .sign-art { position: absolute; right: -4%; top: 50%; transform: translateY(-50%); width: min(760px, 62%); height: auto; opacity: .16; pointer-events: none; user-select: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 35%); mask-image: linear-gradient(90deg, transparent 0, #000 35%); }
+.hero .wrap { position: relative; }
+@media (max-width: 800px) { .hero .sign-art { right: 50%; transform: translate(50%, -50%); width: 120%; opacity: .08; -webkit-mask-image: none; mask-image: none; } }
+.page-head { position: relative; overflow: hidden; }
+.page-head::before { content: ""; position: absolute; right: -2%; top: 50%; transform: translateY(-50%); width: min(420px, 45%); aspect-ratio: 1000 / 640; background: url("../img/post-sign.svg") center / contain no-repeat; opacity: .1; pointer-events: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 40%); mask-image: linear-gradient(90deg, transparent 0, #000 40%); }
+.page-head .wrap { position: relative; }
 .btns { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
 .btn { display: inline-block; padding: .8rem 1.4rem; border-radius: 8px; font-weight: 700; text-decoration: none; border: 2px solid transparent; font-family: var(--head); letter-spacing: .06em; text-transform: uppercase; font-size: 1.1rem; cursor: pointer; }
 .btn.red { background: var(--red); color: #fff; }
@@ -181,7 +189,22 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 @media print {
   .topbar, .site-header, footer, .cal-tools, .subscribe, .btn, .actions { display: none !important; }
   .page-head { background: none; color: #000; border-bottom: 2px solid #000; }
+  .page-head::before, .hero .sign-art { display: none; }
   .page-head h1 { color: #000; }
   .ev { break-inside: avoid; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* History page */
+.caption-quote { border-left: 5px solid var(--gold); background: var(--cream); padding: 1.1rem 1.3rem; border-radius: 0 var(--radius) var(--radius) 0; margin: 1.25rem 0; }
+.caption-quote p { font-style: italic; margin-bottom: .5rem; }
+.caption-quote cite { font-style: normal; font-size: .92rem; color: var(--muted); }
+.namesake { border-top: 5px solid var(--navy); }
+.namesake:nth-child(2) { border-top-color: var(--red); }
+.namesake h3 { font-size: 2rem; margin-bottom: .2rem; }
+.namesake .facts li b { min-width: 8.5rem; }
+.namesake .tbd { color: var(--muted); font-style: italic; }
+.timeline { list-style: none; margin: 0; padding: 0; border-left: 3px solid var(--line); }
+.timeline li { position: relative; padding: 0 0 1.4rem 1.4rem; }
+.timeline li::before { content: ""; position: absolute; left: -9px; top: .35rem; width: 15px; height: 15px; border-radius: 50%; background: var(--gold); border: 3px solid #fff; box-shadow: 0 0 0 2px var(--gold); }
+.timeline .yr { font-family: var(--head); font-size: 1.35rem; color: var(--navy); letter-spacing: .04em; display: block; line-height: 1.1; }
