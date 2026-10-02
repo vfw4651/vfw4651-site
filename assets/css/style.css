@@ -51,7 +51,7 @@ nav a:hover, nav a[aria-current="page"] { background: var(--cream); color: var(-
 nav a.cta { background: var(--red); color: #fff; }
 nav a.cta:hover { background: var(--navy); color: #fff; }
 .menu-btn { display: none; background: none; border: 2px solid var(--navy); color: var(--navy); border-radius: 6px; padding: .4rem .7rem; font-weight: 700; cursor: pointer; }
-@media (max-width: 1020px) {
+@media (max-width: 1100px) {
   .menu-btn { display: block; }
   nav { position: absolute; left: 0; right: 0; top: 100%; background: #fff; border-bottom: 3px solid var(--red); display: none; }
   nav.open { display: block; }
@@ -219,6 +219,25 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 .timeline li { position: relative; padding: 0 0 1.4rem 1.4rem; }
 .timeline li::before { content: ""; position: absolute; left: -9px; top: .35rem; width: 15px; height: 15px; border-radius: 50%; background: var(--gold); border: 3px solid #fff; box-shadow: 0 0 0 2px var(--gold); }
 .timeline .yr { font-family: var(--head); font-size: 1.35rem; color: var(--navy); letter-spacing: .04em; display: block; line-height: 1.1; }
+
+/* History page: dedication clipping, rosters, Herald cards */
+.namesake h3 { font-size: 1.9rem; }
+@media (max-width: 520px) { .namesake .facts li { flex-direction: column; gap: .1rem; } }
+.src { color: var(--muted); font-size: .9rem; margin-top: 1.25rem; max-width: 80ch; }
+.sources { padding: 1.5rem 0 2.5rem; }
+.dedication { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 2rem; align-items: start; margin-top: 1rem; }
+@media (max-width: 860px) { .dedication { grid-template-columns: 1fr; } }
+.clip { margin: 0; }
+.clip img { width: 100%; height: auto; border: 6px solid #fff; box-shadow: 0 2px 14px rgba(0,0,0,.18); }
+.clip figcaption { font-size: .95rem; margin-top: .7rem; }
+.clip .credit { display: block; color: var(--muted); font-size: .88rem; margin-top: .3rem; }
+.roster h3 { font-size: 1.25rem; }
+.roster dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: .35rem 1rem; }
+.roster dt { color: var(--muted); font-size: .92rem; }
+.roster dd { margin: 0; font-weight: 600; color: var(--navy); }
+.clippings .yr { font-family: var(--head); font-size: 1.5rem; color: var(--red); letter-spacing: .04em; line-height: 1; display: block; margin-bottom: .3rem; }
+.clippings h3 { font-size: 1.25rem; }
+.clippings p { margin: 0; }
 
 /* Room for rent (housing.html + homepage banner) */
 .housing-banner { background: var(--gold); color: var(--navy); }
