@@ -2,14 +2,53 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community | post. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
-      "title": "Cape Cod Stand Down for Veterans (VA Providence participating)",
-      "start": "2026-10-02T09:00",
-      "end": "2026-10-02T14:30",
-      "location": "Margaritaville Resort Cape Cod, 1225 Lyannough Road, Hyannis, MA",
+      "title": "McBride's 12th Annual 0K Road Race",
+      "start": "2026-10-03T12:00",
+      "location": "McBride's Pub, 161 Wayland Ave, Providence, RI",
+      "category": "area",
+      "description": "Tongue-in-cheek \"0K\" fun run/walk starting at noon in Wayland Square to benefit Operation Stand Down RI's veteran housing and support programs. $50 includes shirt, two beverage tickets, and one lunch ticket.",
+      "url": "https://osdri.org/mcbrides0k/",
+      "source": "Operation Stand Down Rhode Island"
+    },
+    {
+      "title": "Veterans Resource Fair & BBQ (Congressman Gabe Amo)",
+      "start": "2026-10-03T13:00",
+      "end": "2026-10-03T15:00",
+      "location": "Pete Sepe Pavilion, 40 Asylum Rd, Warren, RI",
       "category": "benefits",
-      "description": "Community resource gathering organized by the Cape & Islands Veterans Outreach Center; VA Providence staff attend to connect veterans with services and VA care. Free admission.",
-      "url": "https://www.va.gov/providence-health-care/events/91623/",
-      "source": "VA Providence Health Care"
+      "description": "Free veterans resource fair and BBQ hosted by Congressman Gabe Amo and the RI Office of Veterans Services. Free food and drinks, veterans services on-site; veterans and military families welcome. RSVP: (401) 729-5600 or Olivia.Teixeira@mail.house.gov.",
+      "url": "https://vets.ri.gov/events/veterans-resource-fair-and-bbq",
+      "source": "RI Office of Veterans Services / Office of Rep. Gabe Amo"
+    },
+    {
+      "title": "Rocky Point Park Walk (Weekend Warriors of New England)",
+      "start": "2026-10-05T18:30",
+      "end": "2026-10-05T19:30",
+      "location": "Rocky Point Park, Warwick, RI",
+      "category": "area",
+      "description": "Evening group walk for veterans hosted by Weekend Warriors of New England, listed on RI Office of Veterans Services' events calendar.",
+      "url": "https://vets.ri.gov/events/rocky-point-park-walk-weekend-warriors-ne-1",
+      "source": "RI Office of Veterans Services"
+    },
+    {
+      "title": "Veterans Golf 2026",
+      "start": "2026-10-08T17:00",
+      "end": "2026-10-08T19:00",
+      "location": "Button Hole, 1 Button Hole Dr, Providence, RI",
+      "category": "benefits",
+      "description": "Veterans golf outing at the Button Hole adaptive golf facility. Contact dwright@buttonhole.org for details.",
+      "url": "https://vets.ri.gov/events/veterans-golf-2026-5",
+      "source": "RI Office of Veterans Services"
+    },
+    {
+      "title": "Patrick Lenihan Car Show (VFW Post 449)",
+      "start": "2026-10-10T09:30",
+      "end": "2026-10-10T17:30",
+      "location": "VFW Post 449, 197 Providence Street, West Warwick, RI",
+      "category": "area",
+      "description": "Annual car show hosted by VFW Post 449, open to the public with cars new and old on display.",
+      "url": "https://beige-clownfish-tdkf.squarespace.com/events",
+      "source": "VFW Post 449"
     },
     {
       "title": "New Veteran Orientation: Learn, Explore and Thrive",
@@ -80,14 +119,14 @@
       "source": "City of Cranston"
     },
     {
-      "title": "Veterans Resource Fair & BBQ (Congressman Gabe Amo)",
-      "start": "2026-10-03T13:00",
-      "end": "2026-10-03T15:00",
-      "location": "Pete Sepe Pavilion, 40 Asylum Rd, Warren, RI",
-      "category": "benefits",
-      "description": "Free veterans resource fair and BBQ hosted by Congressman Gabe Amo and the RI Office of Veterans Services. Free food and drinks, veterans services on-site; veterans and military families welcome. RSVP: (401) 729-5600 or Olivia.Teixeira@mail.house.gov.",
-      "url": "https://vets.ri.gov/events/veterans-resource-fair-and-bbq",
-      "source": "RI Office of Veterans Services / Office of Rep. Gabe Amo"
+      "title": "VFW Post 449 Turkey Trot",
+      "start": "2026-11-14T13:00",
+      "end": "2026-11-14T16:00",
+      "location": "VFW Post 449, 197 Providence Street, West Warwick, RI",
+      "category": "community",
+      "description": "Community Turkey Trot event hosted by VFW Post 449.",
+      "url": "https://beige-clownfish-tdkf.squarespace.com/events",
+      "source": "VFW Post 449"
     }
   ]
 }
