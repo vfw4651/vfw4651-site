@@ -65,7 +65,7 @@
     if (st && !H.available) st.removeAttribute("data-open");
     const hero = document.querySelector(".hero");
     if (H.available && hero) hero.insertAdjacentHTML("afterend",
-      `<div class="housing-banner"><div class="wrap"><span><b>Room for rent</b> upstairs at the Post, 5 Haven Ave. Utilities &amp; WiFi included. Veterans preferred.</span><a class="btn sm" href="${esc(H.page)}">Details</a></div></div>`);
+      `<div class="housing-banner"><div class="wrap"><span><b>Room for rent</b> upstairs at the Post, 5 Haven Ave. Utilities &amp; WiFi included.</span><a class="btn sm" href="${esc(H.page)}">Details</a></div></div>`);
   }
 
   // ----- home: next events -----
