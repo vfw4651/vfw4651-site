@@ -240,6 +240,10 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 .clippings .yr { font-family: var(--head); font-size: 1.5rem; color: var(--red); letter-spacing: .04em; line-height: 1; display: block; margin-bottom: .3rem; }
 .clippings h3 { font-size: 1.25rem; }
 .clippings p { margin: 0; }
+.charter-list { list-style: none; padding: 0; margin: 1.25rem 0 0; columns: 4 11.5rem; column-gap: 2rem; }
+.charter-list li { padding: .32rem 0; border-bottom: 1px solid var(--line); break-inside: avoid; color: var(--navy); }
+@media (max-width: 520px) { .charter-list { columns: 2; column-gap: 1.25rem; font-size: .92rem; } }
+#charter, #help { scroll-margin-top: 5.5rem; }
 
 /* Room for rent (housing.html + homepage banner) */
 .housing-banner { background: var(--gold); color: var(--navy); }
