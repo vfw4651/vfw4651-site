@@ -2,25 +2,6 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community | post. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
-      "title": "McBride's 12th Annual 0K Road Race",
-      "start": "2026-10-03T12:00",
-      "location": "McBride's Pub, 161 Wayland Ave, Providence, RI",
-      "category": "area",
-      "description": "Tongue-in-cheek \"0K\" fun run/walk starting at noon in Wayland Square to benefit Operation Stand Down RI's veteran housing and support programs. $50 includes shirt, two beverage tickets, and one lunch ticket.",
-      "url": "https://osdri.org/mcbrides0k/",
-      "source": "Operation Stand Down Rhode Island"
-    },
-    {
-      "title": "Veterans Resource Fair & BBQ (Congressman Gabe Amo)",
-      "start": "2026-10-03T13:00",
-      "end": "2026-10-03T15:00",
-      "location": "Pete Sepe Pavilion, 40 Asylum Rd, Warren, RI",
-      "category": "benefits",
-      "description": "Free veterans resource fair and BBQ hosted by Congressman Gabe Amo and the RI Office of Veterans Services. Free food and drinks, veterans services on-site; veterans and military families welcome. RSVP: (401) 729-5600 or Olivia.Teixeira@mail.house.gov.",
-      "url": "https://vets.ri.gov/events/veterans-resource-fair-and-bbq",
-      "source": "RI Office of Veterans Services / Office of Rep. Gabe Amo"
-    },
-    {
       "title": "Rocky Point Park Walk (Weekend Warriors of New England)",
       "start": "2026-10-05T18:30",
       "end": "2026-10-05T19:30",
@@ -49,6 +30,16 @@
       "description": "Annual car show hosted by VFW Post 449, open to the public with cars new and old on display.",
       "url": "https://beige-clownfish-tdkf.squarespace.com/events",
       "source": "VFW Post 449"
+    },
+    {
+      "title": "Vet Cafe - Burrillville",
+      "start": "2026-10-14T11:00",
+      "end": "2026-10-14T13:00",
+      "location": "111 Chapel Street, Burrillville, RI 02830",
+      "category": "benefits",
+      "description": "Drop-in resource cafe for veterans hosted by the RI Office of Veterans Services, with staff on hand to answer questions about benefits and services.",
+      "url": "https://vets.ri.gov/events/vet-cafe-burrillville",
+      "source": "RI Office of Veterans Services"
     },
     {
       "title": "New Veteran Orientation: Learn, Explore and Thrive",
@@ -80,6 +71,16 @@
       "source": "VA Providence Health Care"
     },
     {
+      "title": "Full Moon Hike (Weekend Warriors of New England)",
+      "start": "2026-10-26T18:30",
+      "end": "2026-10-26T20:30",
+      "location": "Rhode Island (venue via organizer registration page)",
+      "category": "area",
+      "description": "Evening full moon hike for veterans hosted by Weekend Warriors of New England, listed on RI Office of Veterans Services' events calendar.",
+      "url": "https://vets.ri.gov/events/full-moon-hike-weekend-warriors-new-england-1",
+      "source": "RI Office of Veterans Services"
+    },
+    {
       "title": "VA Providence Fall VetConnect",
       "start": "2026-10-28T16:00",
       "end": "2026-10-28T18:00",
@@ -105,7 +106,7 @@
       "location": "State House to WaterPlace Park, Providence",
       "category": "area",
       "description": "Opening ceremonies at the State House, torch procession, Veterans Resource Fair on Washington Street (3:00-10:00 p.m.), military vehicle display, memorial tributes at sunset and a Memorial Canoe Ceremony. About 150 veterans serve as torchbearers; sign-up and mobility assistance are on the event page.",
-      "url": "https://waterfire.org/schedule/waterfire-salute-to-veterans/",
+      "url": "https://waterfire.org/events/november-7-2026-14th-annual-salute-to-veterans/",
       "source": "WaterFire Providence"
     },
     {
@@ -136,6 +137,16 @@
       "description": "Charity bingo night at VFW Post 449. Doors open at 4:00 p.m.; bingo starts at 5:00 p.m. $40 per person. Raffles, plus $500 and $1,000 jackpots. For details call George Russell at (401) 206-9829.",
       "url": "https://beige-clownfish-tdkf.squarespace.com/events",
       "source": "VFW Post 449 (event flyer)"
+    },
+    {
+      "title": "VFW Post 449 Holiday Party",
+      "start": "2026-12-11T16:30",
+      "end": "2026-12-11T23:30",
+      "location": "VFW Post 449, 197 Providence Street, West Warwick, RI",
+      "category": "community",
+      "description": "Holiday party hosted by VFW Post 449.",
+      "url": "https://beige-clownfish-tdkf.squarespace.com/events",
+      "source": "VFW Post 449"
     }
   ]
 }
