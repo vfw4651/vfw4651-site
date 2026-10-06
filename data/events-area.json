@@ -2,16 +2,6 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community | post. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
-      "title": "Rocky Point Park Walk (Weekend Warriors of New England)",
-      "start": "2026-10-05T18:30",
-      "end": "2026-10-05T19:30",
-      "location": "Rocky Point Park, Warwick, RI",
-      "category": "area",
-      "description": "Evening group walk for veterans hosted by Weekend Warriors of New England, listed on RI Office of Veterans Services' events calendar.",
-      "url": "https://vets.ri.gov/events/rocky-point-park-walk-weekend-warriors-ne-1",
-      "source": "RI Office of Veterans Services"
-    },
-    {
       "title": "Veterans Golf 2026",
       "start": "2026-10-08T17:00",
       "end": "2026-10-08T19:00",
@@ -30,6 +20,16 @@
       "description": "Annual car show hosted by VFW Post 449, open to the public with cars new and old on display.",
       "url": "https://beige-clownfish-tdkf.squarespace.com/events",
       "source": "VFW Post 449"
+    },
+    {
+      "title": "Alpha Bet Class 003 Entrepreneurship Program (veteran cohort begins)",
+      "start": "2026-10-12",
+      "allDay": true,
+      "location": "Online/hybrid (The Vetted, via RI Office of Veterans Services)",
+      "category": "benefits",
+      "description": "Veteran entrepreneurship program cohort (Class #003) begins. Listed on RI Office of Veterans Services' events calendar; apply through The Vetted's Alpha Bet application portal.",
+      "url": "https://vets.ri.gov/events/alpha-bet-class-003-entrepreneurship-program",
+      "source": "RI Office of Veterans Services"
     },
     {
       "title": "Vet Cafe - Burrillville",
