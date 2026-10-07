@@ -12,6 +12,24 @@ window.SITE = {
   phone: "401-942-9768",                                   // ⚠ VERIFY
   email: "",                                               // add a post email (e.g. commander@vfw4651.org)
   meetings: "Last Thursday of each month, 6:00 p.m.",
+  meetingTime: "6:00 p.m.",
+
+  /* ---------- NEXT MEETING ----------
+     The "Next meeting" line on Home and Join Us is read from the Post's
+     Google Calendar: the next event whose title contains meetingTitle.
+     Move or rename the meeting on the calendar and the site follows.
+
+     If the calendar can't be reached, the site falls back to the
+     last-Thursday rule, adjusted by the list below
+     ("usual date": "new date", or "" for "date to be announced").            */
+  meetingTitle: "Post Members Meeting",
+  meetingChanges: {
+    "2026-11-26": "2026-11-19",      // Thanksgiving -> Thu Nov 19
+    "2026-12-31": "2026-12-17"       // New Year's Eve -> Thu Dec 17
+  },
+
+  /* Who a prospective member should ask for (first names, shown on Home and Join Us). */
+  greeters: ["Garry", "Bernie", "Eddie"],
   hours: "",                                               // e.g. "Fri–Sat 4–10 p.m."
   emblem: "assets/img/emblem.png",            // official VFW seal, added Oct 1, 2026
 
@@ -47,7 +65,7 @@ window.SITE = {
       anywhere in the event's description.)                                    */
   calendar: {
     timezone: "America/New_York",
-    apiKey: "",
+    apiKey: "AIzaSyARzwefl5E7tiKClIxdIGOWbbVdq8xWkU0",   // public by design; locked in Google Cloud to vfw4651.org and the Calendar API
     calendars: [
       { id: "a5a5c40d454630ff2b756e708a15d080c71144c16aec55b2b0f772350cffb6e4@group.calendar.google.com",
         label: "Post 4651 Calendar", category: "post", primary: true }

@@ -58,6 +58,46 @@
     else el.textContent = v;
   });
 
+  // ----- next meeting: [data-next-meeting], worked out from the "last Thursday" rule -----
+  // S.meetingChanges maps a usual date to a moved date ("" = not set yet).
+  (function () {
+    const els = document.querySelectorAll("[data-next-meeting]");
+    if (!els.length) return;
+    const iso = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+    const changes = S.meetingChanges || {}, now = new Date();
+    let text = "";
+    for (let i = 0; i < 12 && !text; i++) {
+      const last = new Date(now.getFullYear(), now.getMonth() + i + 1, 0);        // last day of that month
+      last.setDate(last.getDate() - ((last.getDay() - 4 + 7) % 7));                // back up to Thursday
+      const moved = changes[iso(last)];
+      const month = last.toLocaleDateString("en-US", { month: "long" });
+      if (moved === "") {                                                          // moved, new date not set
+        if (new Date(last.getFullYear(), last.getMonth() + 1, 1) > now) text = month + " date to be announced";
+        continue;
+      }
+      const day = moved ? new Date(moved + "T12:00") : last;
+      if (new Date(day.getFullYear(), day.getMonth(), day.getDate(), 20) < now) continue;   // already over
+      text = day.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" }) + (S.meetingTime ? ", " + S.meetingTime : "");
+    }
+    els.forEach(el => { el.textContent = text || S.meetings; });
+
+    // With a calendar key, the Post's Google Calendar is the source of truth.
+    const C = S.calendar || {};
+    if (!C.apiKey || !S.meetingTitle || !E) return;
+    const want = S.meetingTitle.toLowerCase(), tz = C.timezone;
+    E.loadEvents(now, new Date(now.getTime() + 100 * 86400000)).then(({ events }) => {
+      const m = events.find(e => !e.external && !e.allDay && e.end >= now && e.title.toLowerCase().includes(want));
+      if (!m) return;
+      const day = m.start.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: tz });
+      const time = m.start.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit", timeZone: tz }).replace(/\s?AM$/, " a.m.").replace(/\s?PM$/, " p.m.");
+      els.forEach(el => { el.textContent = day + ", " + time; });
+    }).catch(() => {});
+  })();
+  document.querySelectorAll("[data-greeters]").forEach(el => {
+    const g = S.greeters || [];
+    el.textContent = !g.length ? "a Post officer" : g.length < 3 ? g.join(" or ") : g.slice(0, -1).join(", ") + ", or " + g[g.length - 1];
+  });
+
   // ----- room for rent: homepage banner + status on housing.html -----
   const H = S.housing;
   if (H) {
