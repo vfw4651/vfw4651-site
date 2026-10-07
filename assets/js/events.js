@@ -57,7 +57,9 @@
     const r = await fetch(u);
     if (!r.ok) throw new Error(cal.label + ": HTTP " + r.status);
     const j = await r.json();
-    return (j.items || []).filter(i => i.status !== "cancelled" && i.start).map(i => normGoogle(i, cal));
+    // Skip events the public can only see as "busy" (no title): on a calendar shared as free/busy only,
+    // an event shows here only if its own visibility is set to Public.
+    return (j.items || []).filter(i => i.status !== "cancelled" && i.start && i.summary).map(i => normGoogle(i, cal));
   }
   async function fromStatic(from, to) {
     if (!C.staticFile) return [];
