@@ -295,3 +295,8 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 .menu .opt { font-size: .97rem; margin-top: .3rem; }
 .menu.two { columns: 2 22rem; column-gap: 3rem; }
 .menu.two li:last-child { border-bottom: 1px solid var(--line); }
+.canteen-menu { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 2.5rem; }
+@media (max-width: 860px) { .canteen-menu { grid-template-columns: 1fr; gap: 1.5rem; } }
+.wings { border-top: 5px solid var(--red); }
+.hot { display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--red); border: 1px solid currentColor; border-radius: 999px; padding: 0 .4rem; margin-left: .3rem; vertical-align: middle; line-height: 1.5; }
+#menu { scroll-margin-top: 5.5rem; }

@@ -1,50 +1,240 @@
 {
-  "_help": "The Canteen page (canteen.html) and the Home page note are drawn from this file. Each week, replace the \"week\" block with the new flyer's details. \"from\" and \"to\" are the first and last day it covers (YYYY-MM-DD). After the \"to\" date passes, the site stops showing the week's games and specials by itself and falls back to the \"standing\" block, so nothing stale stays up. Leave \"hours\" empty if they are not set. Prices are plain text.",
+  "_help": "The Canteen page (canteen.html) and the Home page note are drawn from this file. \"menu\" is the regular menu: it always shows; change it only when the regular menu changes. Each week, replace the \"week\" block with the new flyer's details. \"from\" and \"to\" are the first and last day it covers (YYYY-MM-DD). After the \"to\" date passes, the site stops showing the week's games and specials by itself and falls back to the \"standing\" block, so nothing stale stays up. Leave \"hours\" empty if they are not set. Prices are plain text. Mark a hot wing flavor with \"spicy\": true.",
   "standing": {
     "title": "Sunday Football at the Canteen",
     "text": "The Canteen is open every Sunday of the football season, noon to 9 p.m.",
     "until": "2027-01-10"
+  },
+  "menu": {
+    "title": "Regular menu",
+    "items": [
+      {
+        "name": "Mozzarella Sticks",
+        "desc": "Six.",
+        "price": "$7"
+      },
+      {
+        "name": "Onion Rings",
+        "desc": "Six.",
+        "price": "$7"
+      },
+      {
+        "name": "Wings",
+        "desc": "Eight pieces.",
+        "price": "$12"
+      },
+      {
+        "name": "Wings & Fry Combo",
+        "desc": "Eight pieces, with fries.",
+        "price": "$15"
+      },
+      {
+        "name": "Burger",
+        "price": "$10"
+      },
+      {
+        "name": "Burger & Fries Combo",
+        "price": "$16"
+      },
+      {
+        "name": "Fries",
+        "price": "$6"
+      },
+      {
+        "name": "Dough Boys",
+        "price": "$5"
+      }
+    ],
+    "wings": {
+      "title": "Wing flavors",
+      "text": "Wings are served with your choice of dressing: ranch or blue cheese.",
+      "groups": [
+        {
+          "title": "Wet",
+          "flavors": [
+            {
+              "name": "Sweet Chili"
+            },
+            {
+              "name": "Buffalo",
+              "spicy": true
+            },
+            {
+              "name": "Sweet Lemon Butter"
+            },
+            {
+              "name": "BBQ"
+            },
+            {
+              "name": "Honey BBQ"
+            },
+            {
+              "name": "Hot Honey",
+              "spicy": true
+            },
+            {
+              "name": "Spicy Garlic Parmesan",
+              "spicy": true
+            }
+          ]
+        },
+        {
+          "title": "Dry rub",
+          "flavors": [
+            {
+              "name": "Lemon Pepper"
+            },
+            {
+              "name": "Lime Pepper"
+            },
+            {
+              "name": "Orange Pepper"
+            },
+            {
+              "name": "Mango Pepper"
+            },
+            {
+              "name": "Cajun",
+              "spicy": true
+            },
+            {
+              "name": "Ranch"
+            },
+            {
+              "name": "Chipotle Ranch",
+              "spicy": true
+            }
+          ]
+        }
+      ]
+    },
+    "note": "Food allergy notice: please inform your server if you or anyone in your party has a food allergy."
   },
   "week": {
     "from": "2026-10-10",
     "to": "2026-10-11",
     "title": "Saturday night & Sunday gameday",
     "days": [
-      { "date": "2026-10-10", "label": "Saturday night", "hours": "" },
-      { "date": "2026-10-11", "label": "Sunday gameday", "hours": "Noon – 9 p.m." }
+      {
+        "date": "2026-10-10",
+        "label": "Saturday night",
+        "hours": ""
+      },
+      {
+        "date": "2026-10-11",
+        "label": "Sunday gameday",
+        "hours": "Noon – 9 p.m."
+      }
     ],
     "football": {
       "date": "2026-10-11",
       "hours": "Open noon – 9 p.m.",
-      "featured": { "game": "Patriots vs. Raiders", "time": "1:00 p.m." },
+      "featured": {
+        "game": "Patriots vs. Raiders",
+        "time": "1:00 p.m."
+      },
       "slots": [
-        { "time": "1:00 p.m.", "games": ["Bengals vs. Dolphins", "Browns vs. Jets", "Texans vs. Titans", "Colts vs. Steelers", "Vikings vs. Saints", "Giants vs. Commanders", "Bears vs. Packers"] },
-        { "time": "4:05 p.m.", "games": ["Broncos vs. Chargers"] },
-        { "time": "4:25 p.m.", "games": ["Lions vs. Cardinals", "49ers vs. Seahawks"] }
+        {
+          "time": "1:00 p.m.",
+          "games": [
+            "Bengals vs. Dolphins",
+            "Browns vs. Jets",
+            "Texans vs. Titans",
+            "Colts vs. Steelers",
+            "Vikings vs. Saints",
+            "Giants vs. Commanders",
+            "Bears vs. Packers"
+          ]
+        },
+        {
+          "time": "4:05 p.m.",
+          "games": [
+            "Broncos vs. Chargers"
+          ]
+        },
+        {
+          "time": "4:25 p.m.",
+          "games": [
+            "Lions vs. Cardinals",
+            "49ers vs. Seahawks"
+          ]
+        }
       ],
       "note": "All times Eastern."
     },
     "specialsTitle": "Weekend specials",
     "specials": [
-      { "name": "Chimi Dog", "price": "$5", "tag": "Dominican street style",
-        "desc": "Griddled beef frank, shredded cabbage dressed in spiced vinegar and mayo, thin tomato slices, chopped red onion and salsa rosada on a lightly toasted roll." },
-      { "name": "Hot Dog", "price": "$3", "desc": "Plain." },
-      { "name": "Loaded Hot Dog", "price": "$4", "desc": "Cheese, onions and chili." },
-      { "name": "Ripper Dog", "price": "$4", "desc": "Wrapped in bacon." },
-      { "name": "Rodeo Cheeseburger", "price": "$11", "desc": "Onion rings, cheese and BBQ sauce.",
-        "options": [{ "label": "With fries or onion rings", "price": "$16" }] },
-      { "name": "Philly Chopped Cheese", "price": "$11", "desc": "Chopped burger, onions, peppers and melty cheese.",
-        "options": [{ "label": "With fries or onion rings", "price": "$16" }] },
-      { "name": "Chicken Tenders", "price": "", "desc": "Four pieces.",
-        "options": [{ "label": "Tenders only", "price": "$12" }, { "label": "With fries or onion rings", "price": "$15" }] }
+      {
+        "name": "Chimi Dog",
+        "price": "$5",
+        "tag": "Dominican street style",
+        "desc": "Griddled beef frank, shredded cabbage dressed in spiced vinegar and mayo, thin tomato slices, chopped red onion and salsa rosada on a lightly toasted roll."
+      },
+      {
+        "name": "Hot Dog",
+        "price": "$3",
+        "desc": "Plain."
+      },
+      {
+        "name": "Loaded Hot Dog",
+        "price": "$4",
+        "desc": "Cheese, onions and chili."
+      },
+      {
+        "name": "Ripper Dog",
+        "price": "$4",
+        "desc": "Wrapped in bacon."
+      },
+      {
+        "name": "Rodeo Cheeseburger",
+        "price": "$11",
+        "desc": "Onion rings, cheese and BBQ sauce.",
+        "options": [
+          {
+            "label": "With fries or onion rings",
+            "price": "$16"
+          }
+        ]
+      },
+      {
+        "name": "Philly Chopped Cheese",
+        "price": "$11",
+        "desc": "Chopped burger, onions, peppers and melty cheese.",
+        "options": [
+          {
+            "label": "With fries or onion rings",
+            "price": "$16"
+          }
+        ]
+      },
+      {
+        "name": "Chicken Tenders",
+        "price": "",
+        "desc": "Four pieces.",
+        "options": [
+          {
+            "label": "Tenders only",
+            "price": "$12"
+          },
+          {
+            "label": "With fries or onion rings",
+            "price": "$15"
+          }
+        ]
+      }
     ],
-    "specialsNote": "Please inform your server if anyone in your party has a food allergy.",
     "buckets": {
       "title": "Beer buckets",
       "sub": "Five beers",
       "items": [
-        { "label": "Pacifico or Yuengling", "price": "$22" },
-        { "label": "Heineken or Corona", "price": "$24" }
+        {
+          "label": "Pacifico or Yuengling",
+          "price": "$22"
+        },
+        {
+          "label": "Heineken or Corona",
+          "price": "$24"
+        }
       ],
       "note": "Please drink responsibly."
     }
