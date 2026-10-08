@@ -184,6 +184,9 @@ form.contact input:focus, form.contact textarea:focus, .search:focus { outline: 
 .officer .links { display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; margin: auto 0 0; }
 .officer .links a { font-family: var(--head); text-transform: uppercase; letter-spacing: .06em; font-size: .95rem; text-decoration: none; padding: .3rem .8rem; border: 2px solid var(--navy); border-radius: 6px; color: var(--navy); }
 .officer .links a:hover { background: var(--navy); color: #fff; }
+/* Officers page: three cards across at desktop width, short last row centred */
+.officers-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; }
+.officers-grid > .officer { flex: 0 1 350px; }
 .officers-note { padding-top: 0; }
 .officers-note p { color: var(--muted); font-size: .9rem; text-align: center; max-width: 46rem; margin: 0 auto; }
 

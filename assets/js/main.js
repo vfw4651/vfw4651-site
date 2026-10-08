@@ -16,6 +16,8 @@
     ["contact", "contact.html", "Contact"],
     ["join", "join-us.html", "Join Us", "cta"]
   ];
+  // Footer "Explore" list: the menu pages plus Post Officers, which is not in the menu.
+  const FOOT = NAV.flatMap(n => n[0] === "history" ? [n, ["officers", "officers.html", "Post Officers"]] : [n]);
 
   function header() {
     const mark = S.emblem ? `<img src="${esc(S.emblem)}" alt="">` : `<span class="mark" aria-hidden="true">4651</span>`;
@@ -36,7 +38,7 @@
       <div class="cols">
         <div><h3>${esc(S.name)}</h3><p>Veterans of Foreign Wars of the United States, Post 4651.<br>An active social and mutual-aid club for veteran fellowship and citizenship.</p></div>
         <div><h3>Visit</h3><p>${S.address.map(esc).join("<br>")}<br>${S.phone ? `<a href="tel:${esc(S.phone.replace(/\D/g, ""))}">${esc(S.phone)}</a><br>` : ""}${S.email ? `<a href="mailto:${esc(S.email)}">${esc(S.email)}</a><br>` : ""}${S.meetings ? "Meetings: " + esc(S.meetings) : ""}</p></div>
-        <div><h3>Explore</h3><ul>${NAV.map(([k, h, l]) => `<li><a href="${h}">${l}</a></li>`).join("")}</ul></div>
+        <div><h3>Explore</h3><ul>${FOOT.map(([k, h, l]) => `<li><a href="${h}">${l}</a></li>`).join("")}</ul></div>
         <div><h3>Follow</h3><ul><li><a href="${esc(S.links.facebook)}" target="_blank" rel="noopener">Facebook</a></li><li><a href="${esc(S.links.instagram)}" target="_blank" rel="noopener">Instagram @${esc(S.links.instagramHandle)}</a></li><li><a href="${esc(S.links.deptCalendar)}" target="_blank" rel="noopener">VFW Dept. of RI calendar</a></li></ul></div>
       </div>
       <div class="legal">© <span id="yr"></span> ${esc(S.name)}. VFW and Veterans of Foreign Wars are marks of the Veterans of Foreign Wars of the U.S. This site is maintained by post volunteers.</div>
