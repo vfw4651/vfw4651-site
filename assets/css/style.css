@@ -268,3 +268,30 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 .housing-cta { border-top: 1px solid var(--line); padding-top: 1rem; margin-top: 1.25rem; }
 .housing-cta p { margin: 0 0 .5rem; color: var(--navy); }
 .housing-cta .btn { margin: .25rem .5rem .25rem 0; }
+
+/* The Canteen (canteen.html) */
+.canteen-days { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-wrap: wrap; gap: .6rem 1rem; }
+.canteen-days li { background: var(--cream); border-left: 4px solid var(--gold); border-radius: 4px; padding: .55rem .9rem; display: flex; flex-direction: column; line-height: 1.35; }
+.canteen-days b { font-family: var(--head); text-transform: uppercase; letter-spacing: .06em; color: var(--navy); font-size: 1.1rem; }
+.canteen-top { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); }
+@media (max-width: 860px) { .canteen-top { grid-template-columns: 1fr; } }
+.gameday { border-top: 5px solid var(--red); }
+.gameday h3 { font-size: 2rem; margin-bottom: .2rem; }
+.gameday h3 span { color: var(--red); white-space: nowrap; }
+.gameday .when { color: var(--muted); margin-bottom: 1.1rem; }
+.slots { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem 1.5rem; }
+.slots h4 { font-family: var(--head); text-transform: uppercase; letter-spacing: .08em; font-size: 1.05rem; color: var(--red); margin: 0 0 .3rem; padding-bottom: .25rem; border-bottom: 2px solid var(--line); }
+.slots ul { list-style: none; padding: 0; margin: 0; }
+.slots li { padding: .22rem 0; }
+.fine { color: var(--muted); font-size: .9rem; margin: 1rem 0 0; }
+.menu { list-style: none; padding: 0; margin: 0; }
+.menu li { padding: .8rem 0; border-bottom: 1px solid var(--line); break-inside: avoid; }
+.menu li:last-child { border-bottom: 0; }
+.menu .row { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.menu .name { font-family: var(--head); text-transform: uppercase; letter-spacing: .03em; font-size: 1.3rem; color: var(--navy); line-height: 1.15; }
+.menu .price { font-weight: 700; color: var(--red); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.menu .tag { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--cat-community); }
+.menu p { margin: .2rem 0 0; color: var(--muted); font-size: .97rem; }
+.menu .opt { font-size: .97rem; margin-top: .3rem; }
+.menu.two { columns: 2 22rem; column-gap: 3rem; }
+.menu.two li:last-child { border-bottom: 1px solid var(--line); }

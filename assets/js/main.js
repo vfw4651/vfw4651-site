@@ -16,8 +16,9 @@
     ["contact", "contact.html", "Contact"],
     ["join", "join-us.html", "Join Us", "cta"]
   ];
-  // Footer "Explore" list: the menu pages plus Post Officers, which is not in the menu.
-  const FOOT = NAV.flatMap(n => n[0] === "history" ? [n, ["officers", "officers.html", "Post Officers"]] : [n]);
+  // Footer "Explore" list: the menu pages plus Post Officers and the Canteen, which are not in the menu.
+  const FOOT = NAV.flatMap(n => n[0] === "history" ? [n, ["officers", "officers.html", "Post Officers"]]
+    : n[0] === "calendar" ? [n, ["canteen", "canteen.html", "The Canteen"]] : [n]);
 
   function header() {
     const mark = S.emblem ? `<img src="${esc(S.emblem)}" alt="">` : `<span class="mark" aria-hidden="true">4651</span>`;

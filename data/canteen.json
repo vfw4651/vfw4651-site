@@ -1,0 +1,52 @@
+{
+  "_help": "The Canteen page (canteen.html) and the Home page note are drawn from this file. Each week, replace the \"week\" block with the new flyer's details. \"from\" and \"to\" are the first and last day it covers (YYYY-MM-DD). After the \"to\" date passes, the site stops showing the week's games and specials by itself and falls back to the \"standing\" block, so nothing stale stays up. Leave \"hours\" empty if they are not set. Prices are plain text.",
+  "standing": {
+    "title": "Sunday Football at the Canteen",
+    "text": "The Canteen is open every Sunday of the football season, noon to 9 p.m.",
+    "until": "2027-01-10"
+  },
+  "week": {
+    "from": "2026-10-10",
+    "to": "2026-10-11",
+    "title": "Saturday night & Sunday gameday",
+    "days": [
+      { "date": "2026-10-10", "label": "Saturday night", "hours": "" },
+      { "date": "2026-10-11", "label": "Sunday gameday", "hours": "Noon – 9 p.m." }
+    ],
+    "football": {
+      "date": "2026-10-11",
+      "hours": "Open noon – 9 p.m.",
+      "featured": { "game": "Patriots vs. Raiders", "time": "1:00 p.m." },
+      "slots": [
+        { "time": "1:00 p.m.", "games": ["Bengals vs. Dolphins", "Browns vs. Jets", "Texans vs. Titans", "Colts vs. Steelers", "Vikings vs. Saints", "Giants vs. Commanders", "Bears vs. Packers"] },
+        { "time": "4:05 p.m.", "games": ["Broncos vs. Chargers"] },
+        { "time": "4:25 p.m.", "games": ["Lions vs. Cardinals", "49ers vs. Seahawks"] }
+      ],
+      "note": "All times Eastern."
+    },
+    "specialsTitle": "Weekend specials",
+    "specials": [
+      { "name": "Chimi Dog", "price": "$5", "tag": "Dominican street style",
+        "desc": "Griddled beef frank, shredded cabbage dressed in spiced vinegar and mayo, thin tomato slices, chopped red onion and salsa rosada on a lightly toasted roll." },
+      { "name": "Hot Dog", "price": "$3", "desc": "Plain." },
+      { "name": "Loaded Hot Dog", "price": "$4", "desc": "Cheese, onions and chili." },
+      { "name": "Ripper Dog", "price": "$4", "desc": "Wrapped in bacon." },
+      { "name": "Rodeo Cheeseburger", "price": "$11", "desc": "Onion rings, cheese and BBQ sauce.",
+        "options": [{ "label": "With fries or onion rings", "price": "$16" }] },
+      { "name": "Philly Chopped Cheese", "price": "$11", "desc": "Chopped burger, onions, peppers and melty cheese.",
+        "options": [{ "label": "With fries or onion rings", "price": "$16" }] },
+      { "name": "Chicken Tenders", "price": "", "desc": "Four pieces.",
+        "options": [{ "label": "Tenders only", "price": "$12" }, { "label": "With fries or onion rings", "price": "$15" }] }
+    ],
+    "specialsNote": "Please inform your server if anyone in your party has a food allergy.",
+    "buckets": {
+      "title": "Beer buckets",
+      "sub": "Five beers",
+      "items": [
+        { "label": "Pacifico or Yuengling", "price": "$22" },
+        { "label": "Heineken or Corona", "price": "$24" }
+      ],
+      "note": "Please drink responsibly."
+    }
+  }
+}
