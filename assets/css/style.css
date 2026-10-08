@@ -299,4 +299,15 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 @media (max-width: 860px) { .canteen-menu { grid-template-columns: 1fr; gap: 1.5rem; } }
 .wings { border-top: 5px solid var(--red); }
 .hot { display: inline-block; font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--red); border: 1px solid currentColor; border-radius: 999px; padding: 0 .4rem; margin-left: .3rem; vertical-align: middle; line-height: 1.5; }
-#menu { scroll-margin-top: 5.5rem; }
+#menu, #drinks { scroll-margin-top: 5.5rem; }
+.drinks { columns: 3 15rem; column-gap: 2.75rem; }
+.drink-group { break-inside: avoid; margin: 0 0 1.75rem; }
+.drink-group h3 { font-size: 1.3rem; letter-spacing: .08em; color: var(--red); margin: 0 0 .2rem; padding-bottom: .25rem; border-bottom: 2px solid var(--line); }
+.drink-group ul { list-style: none; padding: 0; margin: 0; }
+.drink-group li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .24rem 0; border-bottom: 1px solid var(--line); }
+.drink-group li:last-child { border-bottom: 0; }
+.drink-group .price { font-weight: 700; color: var(--navy); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.drink-group em { font-style: normal; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-left: .25rem; }
+.bar-rules { border-top: 5px solid var(--gold); margin-top: .5rem; }
+.bar-rules ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .35rem 1.75rem; }
+.bar-rules li::before { content: "\2605"; color: var(--gold); margin-right: .45rem; }

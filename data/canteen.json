@@ -1,5 +1,5 @@
 {
-  "_help": "The Canteen page (canteen.html) and the Home page note are drawn from this file. \"menu\" is the regular menu: it always shows; change it only when the regular menu changes. Each week, replace the \"week\" block with the new flyer's details. \"from\" and \"to\" are the first and last day it covers (YYYY-MM-DD). After the \"to\" date passes, the site stops showing the week's games and specials by itself and falls back to the \"standing\" block, so nothing stale stays up. Leave \"hours\" empty if they are not set. Prices are plain text. Mark a hot wing flavor with \"spicy\": true.",
+  "_help": "The Canteen page (canteen.html) and the Home page note are drawn from this file. \"menu\" is the regular menu: it always shows; change it only when the regular menu changes. \"drinks\" is the bar's regular price list, by category: it always shows too; change it only when the bar menu changes, and update \"asOf\". Regular prices only: no happy hours, free drinks, two-for-ones or other drink promotions go on the site (R.I. Gen. Laws 3-7-26). Each week, replace the \"week\" block with the new flyer's details. \"from\" and \"to\" are the first and last day it covers (YYYY-MM-DD). After the \"to\" date passes, the site stops showing the week's games and specials by itself and falls back to the \"standing\" block, so nothing stale stays up. Leave \"hours\" empty if they are not set. Prices are plain text. Mark a hot wing flavor with \"spicy\": true.",
   "standing": {
     "title": "Sunday Football at the Canteen",
     "text": "The Canteen is open every Sunday of the football season, noon to 9 p.m.",
@@ -109,6 +109,408 @@
       ]
     },
     "note": "Food allergy notice: please inform your server if you or anyone in your party has a food allergy."
+  },
+  "drinks": {
+    "title": "Drinks",
+    "asOf": "October 2026",
+    "groups": [
+      {
+        "title": "Beer",
+        "items": [
+          {
+            "name": "Angry Orchard",
+            "price": "$5"
+          },
+          {
+            "name": "Blue Moon",
+            "price": "$6"
+          },
+          {
+            "name": "Budweiser",
+            "price": "$5"
+          },
+          {
+            "name": "Bud Light",
+            "price": "$5"
+          },
+          {
+            "name": "Coors Light",
+            "price": "$5"
+          },
+          {
+            "name": "Corona",
+            "price": "$6"
+          },
+          {
+            "name": "Heineken 0.0",
+            "price": "$5",
+            "note": "Non-alcoholic"
+          },
+          {
+            "name": "Heineken",
+            "price": "$6"
+          },
+          {
+            "name": "Michelob Ultra",
+            "price": "$5"
+          },
+          {
+            "name": "Miller Lite",
+            "price": "$5"
+          },
+          {
+            "name": "Modelo",
+            "price": "$6"
+          },
+          {
+            "name": "Pacifico",
+            "price": "$5"
+          },
+          {
+            "name": "Stella",
+            "price": "$6"
+          },
+          {
+            "name": "Samuel Adams",
+            "price": "$6"
+          },
+          {
+            "name": "Yuengling",
+            "price": "$5"
+          },
+          {
+            "name": "Coors Special",
+            "price": "$3"
+          },
+          {
+            "name": "Headless Oarsman",
+            "price": "$6"
+          },
+          {
+            "name": "McKenzie's Pumpkin Jack",
+            "price": "$6"
+          },
+          {
+            "name": "Rise A.P.A.",
+            "price": "$6"
+          }
+        ]
+      },
+      {
+        "title": "Vodka",
+        "items": [
+          {
+            "name": "Absolut",
+            "price": "$8"
+          },
+          {
+            "name": "Amsterdam Lemon",
+            "price": "$7"
+          },
+          {
+            "name": "Ciroc",
+            "price": "$9"
+          },
+          {
+            "name": "Grey Goose",
+            "price": "$10"
+          },
+          {
+            "name": "Ketel One",
+            "price": "$8"
+          },
+          {
+            "name": "Tito's",
+            "price": "$8"
+          },
+          {
+            "name": "Espresso Vodka",
+            "price": "$6"
+          },
+          {
+            "name": "Stoli Rasp",
+            "price": "$7"
+          },
+          {
+            "name": "New Amsterdam",
+            "price": "$7"
+          }
+        ]
+      },
+      {
+        "title": "Gin",
+        "items": [
+          {
+            "name": "Tanqueray",
+            "price": "$8"
+          },
+          {
+            "name": "Sloe Gin",
+            "price": "$6"
+          },
+          {
+            "name": "Crystal Palace",
+            "price": "$6"
+          }
+        ]
+      },
+      {
+        "title": "Rum",
+        "items": [
+          {
+            "name": "Bacardi",
+            "price": "$7"
+          },
+          {
+            "name": "Captain Morgan",
+            "price": "$7"
+          },
+          {
+            "name": "Malibu",
+            "price": "$7"
+          },
+          {
+            "name": "Myers's",
+            "price": "$7"
+          },
+          {
+            "name": "Sailor Jerry",
+            "price": "$7"
+          }
+        ]
+      },
+      {
+        "title": "Tequila",
+        "items": [
+          {
+            "name": "1800 Blanco",
+            "price": "$9"
+          },
+          {
+            "name": "1800 Coconut",
+            "price": "$9"
+          },
+          {
+            "name": "1800 Reposado",
+            "price": "$10"
+          },
+          {
+            "name": "Don Julio 1942",
+            "price": "$25"
+          },
+          {
+            "name": "Casamigos",
+            "price": "$11"
+          },
+          {
+            "name": "Don Julio Blanco",
+            "price": "$11"
+          },
+          {
+            "name": "Don Julio Reposado",
+            "price": "$12"
+          },
+          {
+            "name": "Jose Cuervo Silver",
+            "price": "$7"
+          },
+          {
+            "name": "Jose Cuervo Gold",
+            "price": "$7"
+          },
+          {
+            "name": "Patrón Silver",
+            "price": "$11"
+          },
+          {
+            "name": "Well Tequila",
+            "price": "$6"
+          },
+          {
+            "name": "Casamigos Reposado",
+            "price": "$12"
+          },
+          {
+            "name": "Cuervo Tradicional Reposado",
+            "price": "$8"
+          },
+          {
+            "name": "Don Julio Añejo",
+            "price": "$14"
+          },
+          {
+            "name": "Patrón Reposado",
+            "price": "$12"
+          },
+          {
+            "name": "Lunazul Blanco",
+            "price": "$7"
+          },
+          {
+            "name": "Lunazul Reposado",
+            "price": "$8"
+          }
+        ]
+      },
+      {
+        "title": "Cordials",
+        "items": [
+          {
+            "name": "Amaretto Disaronno",
+            "price": "$8"
+          },
+          {
+            "name": "Baileys",
+            "price": "$7"
+          },
+          {
+            "name": "Fireball",
+            "price": "$3"
+          },
+          {
+            "name": "Grand Marnier",
+            "price": "$10"
+          },
+          {
+            "name": "Kahlua",
+            "price": "$7"
+          },
+          {
+            "name": "Midori",
+            "price": "$7"
+          },
+          {
+            "name": "Sambuca",
+            "price": "$7"
+          },
+          {
+            "name": "McGillicuddy's",
+            "price": "$5"
+          }
+        ]
+      },
+      {
+        "title": "Whiskey & bourbon",
+        "items": [
+          {
+            "name": "American Honey",
+            "price": "$7"
+          },
+          {
+            "name": "Canadian Club",
+            "price": "$7"
+          },
+          {
+            "name": "Crown Royal",
+            "price": "$9"
+          },
+          {
+            "name": "Crown Apple",
+            "price": "$9"
+          },
+          {
+            "name": "Crown Vanilla",
+            "price": "$9"
+          },
+          {
+            "name": "Dewar's White Label",
+            "price": "$7"
+          },
+          {
+            "name": "Fireball",
+            "price": "$3"
+          },
+          {
+            "name": "Horse Soldiers",
+            "price": "$7"
+          },
+          {
+            "name": "Jack Daniel's",
+            "price": "$8"
+          },
+          {
+            "name": "Jameson",
+            "price": "$7"
+          },
+          {
+            "name": "Jim Beam",
+            "price": "$7"
+          },
+          {
+            "name": "Jim Beam Black",
+            "price": "$9"
+          },
+          {
+            "name": "Maker's Mark",
+            "price": "$10"
+          },
+          {
+            "name": "Proper Twelve",
+            "price": "$8"
+          },
+          {
+            "name": "Rock & Rye",
+            "price": "$7"
+          },
+          {
+            "name": "Southern Comfort",
+            "price": "$7"
+          },
+          {
+            "name": "V.O.",
+            "price": "$7"
+          },
+          {
+            "name": "Blaze",
+            "price": "$7"
+          },
+          {
+            "name": "Knob Creek 9",
+            "price": "$9"
+          },
+          {
+            "name": "Screwball",
+            "price": "$8"
+          }
+        ]
+      },
+      {
+        "title": "Cognac",
+        "items": [
+          {
+            "name": "Hennessy",
+            "price": "$11"
+          },
+          {
+            "name": "Paul Masson",
+            "price": "$7"
+          },
+          {
+            "name": "Rémy",
+            "price": "$11"
+          },
+          {
+            "name": "1738",
+            "price": "$12"
+          },
+          {
+            "name": "D'USSÉ",
+            "price": "$11"
+          }
+        ]
+      }
+    ],
+    "rules": {
+      "title": "Bar rules",
+      "items": [
+        "Respect the bartenders.",
+        "Tip your bartender.",
+        "No politics at the bar.",
+        "Treat everyone like family.",
+        "Have a good time!"
+      ]
+    },
+    "note": "You must be 21 or older to be served alcohol. Please drink responsibly."
   },
   "week": {
     "from": "2026-10-10",

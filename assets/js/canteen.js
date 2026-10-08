@@ -1,4 +1,4 @@
-/* The Canteen: the regular menu and this week's games and specials, drawn from data/canteen.json.
+/* The Canteen: the regular menu, the bar list and this week's games and specials, drawn from data/canteen.json.
    Used by canteen.html (#canteen) and by the Home page note ([data-canteen-teaser]).
    A week stops showing by itself once its "to" date has passed. */
 (function () {
@@ -78,6 +78,15 @@
           </div>` : ""}
         </div>
         ${mn.note ? `<p class="fine">${esc(mn.note)}</p>` : ""}`);
+    }
+    const dr = d.drinks;
+    if (dr && dr.groups && dr.groups.length) {
+      const ru = dr.rules;
+      secs.push(`<div class="kicker">At the bar</div><h2 id="drinks">${esc(dr.title || "Drinks")}</h2>
+        <div class="drinks">${dr.groups.map(g => `<div class="drink-group"><h3>${esc(g.title)}</h3>
+          <ul>${(g.items || []).map(i => `<li><span>${esc(i.name)}${i.note ? ` <em>${esc(i.note)}</em>` : ""}</span><span class="price">${esc(i.price)}</span></li>`).join("")}</ul></div>`).join("")}</div>
+        ${ru && ru.items && ru.items.length ? `<div class="card bar-rules"><h3>${esc(ru.title || "Bar rules")}</h3><ul>${ru.items.map(r => `<li>${esc(r)}</li>`).join("")}</ul></div>` : ""}
+        <p class="fine">${dr.asOf ? `Prices as of ${esc(dr.asOf)}. ` : ""}${esc(dr.note || "")}</p>`);
     }
     page.innerHTML = secs.map((x, i) => `<section class="block${i % 2 ? " alt" : ""}"><div class="wrap">${x}</div></section>`).join("");
     const find = document.getElementById("canteen-find");
