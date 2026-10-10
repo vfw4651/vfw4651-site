@@ -2,16 +2,6 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community | post. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
-      "title": "Veterans Golf 2026",
-      "start": "2026-10-08T17:00",
-      "end": "2026-10-08T19:00",
-      "location": "Button Hole, 1 Button Hole Dr, Providence, RI",
-      "category": "benefits",
-      "description": "Veterans golf outing at the Button Hole adaptive golf facility. Contact dwright@buttonhole.org for details.",
-      "url": "https://vets.ri.gov/events/veterans-golf-2026-5",
-      "source": "RI Office of Veterans Services"
-    },
-    {
       "title": "Patrick Lenihan Car Show (VFW Post 449)",
       "start": "2026-10-10T09:30",
       "end": "2026-10-10T17:30",
@@ -155,6 +145,16 @@
       "description": "Holiday party hosted by VFW Post 449.",
       "url": "https://beige-clownfish-tdkf.squarespace.com/events",
       "source": "VFW Post 449"
+    },
+    {
+      "title": "Vet Cafe - Burrillville",
+      "start": "2026-10-21T11:00",
+      "end": "2026-10-21T13:00",
+      "location": "111 Chapel Street, Burrillville, RI 02830",
+      "category": "benefits",
+      "description": "Drop-in resource cafe for veterans hosted by the RI Office of Veterans Services, with staff on hand to answer questions about benefits and services.",
+      "url": "https://vets.ri.gov/events/vet-cafe-burrillville",
+      "source": "RI Office of Veterans Services"
     }
   ]
 }
