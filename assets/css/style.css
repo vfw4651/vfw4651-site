@@ -226,6 +226,26 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 /* History page: dedication clipping, rosters, Herald cards */
 .namesake h3 { font-size: 1.9rem; }
 @media (max-width: 520px) { .namesake .facts li { flex-direction: column; gap: .1rem; } }
+
+/* History page: namesake portraits, faded photos of the framed portraits in the hall.
+   Narrow card: a square band across the top, fading out downward.
+   Wide card (about 450px and up): the portrait sits in the top right corner and fades out to
+   the left and downward; the name and the first three facts keep clear of it.
+   To make the portraits stronger or fainter, change the one opacity value. */
+.namesakes { align-items: stretch; }
+.namesake { position: relative; overflow: hidden; container-type: inline-size; }
+.namesake .facts li { flex-direction: column; gap: .1rem; }
+.namesake .kicker { text-wrap: balance; }
+.namesake .portrait { display: block; width: calc(100% + 3rem); max-width: none; height: auto; aspect-ratio: 1 / 1; margin: -1.5rem -1.5rem .25rem; object-fit: cover; object-position: 50% 8%; opacity: .6; pointer-events: none; user-select: none;
+  -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 97%); mask-image: linear-gradient(to bottom, #000 62%, transparent 97%); }
+@container (min-width: 400px) {
+  .namesake .portrait { position: absolute; top: 0; right: 0; width: 40%; aspect-ratio: 4 / 5; margin: 0; object-position: 50% 50%;
+    -webkit-mask-image: linear-gradient(to right, transparent 6%, #000 42%), linear-gradient(to bottom, #000 60%, transparent 94%); mask-image: linear-gradient(to right, transparent 6%, #000 42%), linear-gradient(to bottom, #000 60%, transparent 94%);
+    -webkit-mask-composite: source-in; mask-composite: intersect; }
+  .namesake .kicker { max-width: 68%; letter-spacing: .12em; }
+  .namesake h3, .namesake .facts li:nth-child(-n+3) { max-width: 57%; }
+}
+@media print { .namesake .portrait { opacity: 1; } }
 .src { color: var(--muted); font-size: .9rem; margin-top: 1.25rem; max-width: 80ch; }
 .sources { padding: 1.5rem 0 2.5rem; }
 .dedication { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 2rem; align-items: start; margin-top: 1rem; }
