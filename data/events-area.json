@@ -69,6 +69,25 @@
       "source": "VA Providence Health Care"
     },
     {
+      "title": "Vet Cafe - Burrillville",
+      "start": "2026-10-21T11:00",
+      "end": "2026-10-21T13:00",
+      "location": "111 Chapel Street, Burrillville, RI 02830",
+      "category": "benefits",
+      "description": "Drop-in resource cafe for veterans hosted by the RI Office of Veterans Services, with staff on hand to answer questions about benefits and services.",
+      "url": "https://vets.ri.gov/events/vet-cafe-burrillville",
+      "source": "RI Office of Veterans Services"
+    },
+    {
+      "title": "A Concert for Freedom: Revolutionary Black & White Voices",
+      "start": "2026-10-25T16:00",
+      "location": "First Baptist Church in America, 75 North Main Street, Providence, RI",
+      "category": "area",
+      "description": "Free and open to the public. The Schiller Institute Chorus sings Revolutionary-era African American spirituals, with dramatic readings from the writings of Rhode Island patriots, writers and thinkers that bring out underrepresented voices in America's founding. Presented by Stages of Freedom with the RI 250 Commission as the closing event of Rhode Island's Semiquincentennial, with support from the RI State Council on the Arts.",
+      "url": "https://www.stagesoffreedom.org/concertforfreedom",
+      "source": "Stages of Freedom"
+    },
+    {
       "title": "Full Moon Hike (Weekend Warriors of New England)",
       "start": "2026-10-26T18:30",
       "end": "2026-10-26T20:30",
@@ -145,16 +164,6 @@
       "description": "Holiday party hosted by VFW Post 449.",
       "url": "https://beige-clownfish-tdkf.squarespace.com/events",
       "source": "VFW Post 449"
-    },
-    {
-      "title": "Vet Cafe - Burrillville",
-      "start": "2026-10-21T11:00",
-      "end": "2026-10-21T13:00",
-      "location": "111 Chapel Street, Burrillville, RI 02830",
-      "category": "benefits",
-      "description": "Drop-in resource cafe for veterans hosted by the RI Office of Veterans Services, with staff on hand to answer questions about benefits and services.",
-      "url": "https://vets.ri.gov/events/vet-cafe-burrillville",
-      "source": "RI Office of Veterans Services"
     }
   ]
 }
