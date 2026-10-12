@@ -2,16 +2,6 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community | post. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
-      "title": "Patrick Lenihan Car Show (VFW Post 449)",
-      "start": "2026-10-10T09:30",
-      "end": "2026-10-10T17:30",
-      "location": "VFW Post 449, 197 Providence Street, West Warwick, RI",
-      "category": "area",
-      "description": "Annual car show hosted by VFW Post 449, open to the public with cars new and old on display.",
-      "url": "https://beige-clownfish-tdkf.squarespace.com/events",
-      "source": "VFW Post 449"
-    },
-    {
       "title": "Alpha Bet Class 003 Entrepreneurship Program (veteran cohort begins)",
       "start": "2026-10-12",
       "allDay": true,
@@ -106,6 +96,16 @@
       "description": "Veterans and families join VA Providence leadership for updates on programs and to connect with representatives from VA Enrollment and the Veterans Benefits Administration.",
       "url": "https://discover.va.gov/events/va-providence-fall-vetconnect/",
       "source": "VA Providence Health Care"
+    },
+    {
+      "title": "From Slaves to Soldiers: The 1st Rhode Island Regiment, with Robert A. Geake",
+      "start": "2026-11-05T18:30",
+      "end": "2026-11-05T20:00",
+      "location": "North Kingstown Town Hall (2nd Floor), 80 Boston Neck Road, North Kingstown, RI",
+      "category": "area",
+      "description": "HistWick Speaker Series talk on the 1st Rhode Island Regiment — the Continental Army unit of African American and Native American enlisted men known as the Black Regiment — presented by historian and author Robert A. Geake.",
+      "url": "https://histwick.org/events/2026-11-05/",
+      "source": "HistWick"
     },
     {
       "title": "Westerly Veterans Day Parade",
