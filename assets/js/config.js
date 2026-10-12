@@ -42,8 +42,11 @@ window.SITE = {
     joinForm: "https://docs.google.com/forms/d/e/1FAIpQLSc60vdcybZhGdgXvSCTSftDnt-2YWr2RN_MvZJvyhWqJe9JiQ/viewform",
     eligibility: "https://www.vfw.org/join/eligibility",
     deptCalendar: "https://vfwri.org/di/vfw/v2/default.asp?pid=6013&caltype=Department",
-    facebook: "https://www.facebook.com/groups/1127909195301580/",   // currently a Facebook GROUP
-    facebookPage: "",        // if you create a Facebook PAGE, paste its URL here to show a live timeline
+    facebook: "https://www.facebook.com/groups/1127909195301580/",   // the members' Facebook GROUP
+    facebookPage: "",        // the Post's public Facebook PAGE. Paste its URL here and the site switches over:
+                             // header/footer "Facebook" links go to the Page, a live timeline shows on
+                             // Home and Community, and the Group is listed as "Members' Facebook group".
+                             // Also add the Page URL to "sameAs" in index.html.
     instagram: "https://www.instagram.com/vfwpost4651/",
     instagramHandle: "vfwpost4651",
     auxiliary: ""            // link to Auxiliary info/page when ready
