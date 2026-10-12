@@ -43,7 +43,7 @@ window.SITE = {
     eligibility: "https://www.vfw.org/join/eligibility",
     deptCalendar: "https://vfwri.org/di/vfw/v2/default.asp?pid=6013&caltype=Department",
     facebook: "https://www.facebook.com/groups/1127909195301580/",   // the members' Facebook GROUP
-    facebookPage: "",        // the Post's public Facebook PAGE. Paste its URL here and the site switches over:
+    facebookPage: "https://www.facebook.com/vfwpost4651",        // the Post's public Facebook PAGE. Paste its URL here and the site switches over:
                              // header/footer "Facebook" links go to the Page, a live timeline shows on
                              // Home and Community, and the Group is listed as "Members' Facebook group".
                              // Also add the Page URL to "sameAs" in index.html.
