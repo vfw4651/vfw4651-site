@@ -54,7 +54,7 @@ window.SITE = {
        Set links.facebookPage above and the feed appears automatically.
      Instagram: create a free feed at https://behold.so (connect the account
        once), then paste the Feed ID here. Blank = a "Follow us" card shows.   */
-  instagramFeedId: "",
+  instagramFeedId: "iBiittcOruurApcZ2Eus",
 
   /* ---------- CALENDAR ----------
      apiKey: a free Google Calendar API key (see SETUP.md, step 3).
