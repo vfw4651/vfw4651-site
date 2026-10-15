@@ -2,16 +2,6 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community | post. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
-      "title": "Alpha Bet Class 003 Entrepreneurship Program (veteran cohort begins)",
-      "start": "2026-10-12",
-      "allDay": true,
-      "location": "Online/hybrid (The Vetted, via RI Office of Veterans Services)",
-      "category": "benefits",
-      "description": "Veteran entrepreneurship program cohort (Class #003) begins. Listed on RI Office of Veterans Services' events calendar; apply through The Vetted's Alpha Bet application portal.",
-      "url": "https://vets.ri.gov/events/alpha-bet-class-003-entrepreneurship-program",
-      "source": "RI Office of Veterans Services"
-    },
-    {
       "title": "Vet Cafe - Burrillville",
       "start": "2026-10-14T11:00",
       "end": "2026-10-14T13:00",
@@ -30,6 +20,16 @@
       "description": "Enrollment & claims support (noon-1pm) followed by New Veteran Orientation (1-3pm): learn about VA services, accommodations, and claims assistance. Free, registration required. Contact Cheryl.Richard@va.gov.",
       "url": "https://www.va.gov/providence-health-care/events/90660/",
       "source": "VA Providence Health Care"
+    },
+    {
+      "title": "The Dinner Circle: Southern Hospitality",
+      "start": "2026-10-15T18:30",
+      "end": "2026-10-15T20:00",
+      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
+      "category": "post",
+      "description": "Three-course, family-style dinner at the Post with Southern dishes, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come solo, with friends or as a date night; 21+. $35 per person; tickets through Eventbrite. The menu is set, so anyone with food allergies or dietary needs should contact the chef before buying.",
+      "url": "https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002247493151",
+      "source": "Eventbrite (Chef's Soulful Compass)"
     },
     {
       "title": "OktoberVets 5K (VFW Post 152)",
@@ -67,6 +67,16 @@
       "description": "Drop-in resource cafe for veterans hosted by the RI Office of Veterans Services, with staff on hand to answer questions about benefits and services.",
       "url": "https://vets.ri.gov/events/vet-cafe-burrillville",
       "source": "RI Office of Veterans Services"
+    },
+    {
+      "title": "The Dinner Circle: Island Soul",
+      "start": "2026-10-22T18:30",
+      "end": "2026-10-22T20:00",
+      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
+      "category": "post",
+      "description": "Three-course, family-style dinner at the Post with Caribbean flavors, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come solo, with friends or as a date night; 21+. $35 per person; tickets through Eventbrite. The menu is set, so anyone with food allergies or dietary needs should contact the chef before buying.",
+      "url": "https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002247493151",
+      "source": "Eventbrite (Chef's Soulful Compass)"
     },
     {
       "title": "A Concert for Freedom: Revolutionary Black & White Voices",
@@ -127,6 +137,16 @@
       "source": "HistWick"
     },
     {
+      "title": "The Dinner Circle: Night in New Orleans",
+      "start": "2026-11-05T18:30",
+      "end": "2026-11-05T20:00",
+      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
+      "category": "post",
+      "description": "Three-course, family-style dinner at the Post with Louisiana dishes, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come solo, with friends or as a date night; 21+. $35 per person; tickets through Eventbrite. The menu is set, so anyone with food allergies or dietary needs should contact the chef before buying.",
+      "url": "https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002247493151",
+      "source": "Eventbrite (Chef's Soulful Compass)"
+    },
+    {
       "title": "Westerly Veterans Day Parade",
       "start": "2026-11-07T09:30",
       "end": "2026-11-07T11:00",
@@ -173,6 +193,26 @@
       "description": "Charity bingo night at VFW Post 449. Doors open at 4:00 p.m.; bingo starts at 5:00 p.m. $40 per person. Raffles, plus $500 and $1,000 jackpots. For details call George Russell at (401) 206-9829.",
       "url": "https://beige-clownfish-tdkf.squarespace.com/events",
       "source": "VFW Post 449 (event flyer)"
+    },
+    {
+      "title": "The Dinner Circle: Mexican Mercado",
+      "start": "2026-12-03T18:30",
+      "end": "2026-12-03T20:00",
+      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
+      "category": "post",
+      "description": "Three-course, family-style dinner at the Post with Mexican favorites, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come solo, with friends or as a date night; 21+. $35 per person; tickets through Eventbrite. The menu is set, so anyone with food allergies or dietary needs should contact the chef before buying.",
+      "url": "https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002247493151",
+      "source": "Eventbrite (Chef's Soulful Compass)"
+    },
+    {
+      "title": "The Dinner Circle: Italian Trattoria",
+      "start": "2026-12-10T18:30",
+      "end": "2026-12-10T20:00",
+      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
+      "category": "post",
+      "description": "Three-course, family-style dinner at the Post with Italian classics, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come solo, with friends or as a date night; 21+. $35 per person; tickets through Eventbrite. The menu is set, so anyone with food allergies or dietary needs should contact the chef before buying.",
+      "url": "https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002247493151",
+      "source": "Eventbrite (Chef's Soulful Compass)"
     },
     {
       "title": "VFW Post 449 Holiday Party",
