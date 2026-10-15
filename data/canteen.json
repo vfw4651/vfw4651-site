@@ -513,52 +513,51 @@
     "note": "You must be 21 or older to be served alcohol. Please drink responsibly."
   },
   "week": {
-    "from": "2026-10-10",
-    "to": "2026-10-11",
+    "from": "2026-10-17",
+    "to": "2026-10-18",
     "title": "Saturday night & Sunday gameday",
     "days": [
       {
-        "date": "2026-10-10",
+        "date": "2026-10-17",
         "label": "Saturday night",
         "hours": ""
       },
       {
-        "date": "2026-10-11",
+        "date": "2026-10-18",
         "label": "Sunday gameday",
         "hours": "Noon – 9 p.m."
       }
     ],
     "football": {
-      "date": "2026-10-11",
+      "date": "2026-10-18",
       "hours": "Open noon – 9 p.m.",
       "featured": {
-        "game": "Patriots vs. Raiders",
+        "game": "Patriots vs. Jets",
         "time": "1:00 p.m."
       },
       "slots": [
         {
           "time": "1:00 p.m.",
           "games": [
-            "Bengals vs. Dolphins",
-            "Browns vs. Jets",
-            "Texans vs. Titans",
-            "Colts vs. Steelers",
-            "Vikings vs. Saints",
-            "Giants vs. Commanders",
-            "Bears vs. Packers"
+            "Eagles vs. Panthers",
+            "Browns vs. Ravens",
+            "Falcons vs. Bears",
+            "Giants vs. Saints",
+            "Buccaneers vs. Steelers",
+            "Colts vs. Titans"
           ]
         },
         {
           "time": "4:05 p.m.",
           "games": [
-            "Broncos vs. Chargers"
+            "Rams vs. Cardinals"
           ]
         },
         {
           "time": "4:25 p.m.",
           "games": [
-            "Lions vs. Cardinals",
-            "49ers vs. Seahawks"
+            "Raiders vs. Bills",
+            "Chiefs vs. Chargers"
           ]
         }
       ],
@@ -624,21 +623,6 @@
           }
         ]
       }
-    ],
-    "buckets": {
-      "title": "Beer buckets",
-      "sub": "Five beers",
-      "items": [
-        {
-          "label": "Pacifico or Yuengling",
-          "price": "$22"
-        },
-        {
-          "label": "Heineken or Corona",
-          "price": "$24"
-        }
-      ],
-      "note": "Please drink responsibly."
-    }
+    ]
   }
 }
