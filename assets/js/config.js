@@ -11,7 +11,7 @@ window.SITE = {
   address: ["7 Haven Ave", "Cranston, RI"],                 // ⚠ VERIFY (add zip)
   phone: "401-942-9768",                                   // ⚠ VERIFY
   email: "",                                               // add a post email (e.g. commander@vfw4651.org)
-  meetings: "Last Thursday of each month, 6:00 p.m.",
+  meetings: "Last Wednesday of each month, 6:00 p.m.",
   meetingTime: "6:00 p.m.",
 
   /* ---------- NEXT MEETING ----------
@@ -20,12 +20,11 @@ window.SITE = {
      Move or rename the meeting on the calendar and the site follows.
 
      If the calendar can't be reached, the site falls back to the
-     last-Thursday rule, adjusted by the list below
+     last-Wednesday rule, adjusted by the list below
      ("usual date": "new date", or "" for "date to be announced").            */
   meetingTitle: "Post Members Meeting",
   meetingChanges: {
-    "2026-11-26": "2026-11-19",      // Thanksgiving -> Thu Nov 19
-    "2026-12-31": "2026-12-17"       // New Year's Eve -> Thu Dec 17
+    // e.g. "2026-12-30": "2026-12-16"   (moved from the last Thursday to the last Wednesday, Oct 2026)
   },
 
   /* Who a prospective member should ask for (first names, shown on Home and Join Us). */

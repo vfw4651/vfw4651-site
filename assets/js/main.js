@@ -68,7 +68,7 @@
   document.querySelectorAll('a[data-site="facebook"]').forEach(a => { if (a.textContent.trim() === "Facebook") a.textContent = S.links.facebookPage ? "Our Facebook page" : "Our Facebook group"; });
   document.querySelectorAll("[data-fb-group]").forEach(li => { li.hidden = !FB_GROUP; });
 
-  // ----- next meeting: [data-next-meeting], worked out from the "last Thursday" rule -----
+  // ----- next meeting: [data-next-meeting], worked out from the "last Wednesday" rule -----
   // S.meetingChanges maps a usual date to a moved date ("" = not set yet).
   (function () {
     const els = document.querySelectorAll("[data-next-meeting]");
@@ -78,7 +78,7 @@
     let text = "";
     for (let i = 0; i < 12 && !text; i++) {
       const last = new Date(now.getFullYear(), now.getMonth() + i + 1, 0);        // last day of that month
-      last.setDate(last.getDate() - ((last.getDay() - 4 + 7) % 7));                // back up to Thursday
+      last.setDate(last.getDate() - ((last.getDay() - 3 + 7) % 7));                // back up to Wednesday
       const moved = changes[iso(last)];
       const month = last.toLocaleDateString("en-US", { month: "long" });
       if (moved === "") {                                                          // moved, new date not set
