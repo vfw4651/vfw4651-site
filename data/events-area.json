@@ -2,36 +2,6 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community | post. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
-      "title": "Vet Cafe - Burrillville",
-      "start": "2026-10-14T11:00",
-      "end": "2026-10-14T13:00",
-      "location": "111 Chapel Street, Burrillville, RI 02830",
-      "category": "benefits",
-      "description": "Drop-in resource cafe for veterans hosted by the RI Office of Veterans Services, with staff on hand to answer questions about benefits and services.",
-      "url": "https://vets.ri.gov/events/vet-cafe-burrillville",
-      "source": "RI Office of Veterans Services"
-    },
-    {
-      "title": "New Veteran Orientation: Learn, Explore and Thrive",
-      "start": "2026-10-15T11:00",
-      "end": "2026-10-15T15:00",
-      "location": "VA Providence Medical Center, Main Building 5th Floor Classrooms, 830 Chalkstone Ave, Providence",
-      "category": "benefits",
-      "description": "Enrollment & claims support (noon-1pm) followed by New Veteran Orientation (1-3pm): learn about VA services, accommodations, and claims assistance. Free, registration required. Contact Cheryl.Richard@va.gov.",
-      "url": "https://www.va.gov/providence-health-care/events/90660/",
-      "source": "VA Providence Health Care"
-    },
-    {
-      "title": "The Dinner Circle: Southern Hospitality",
-      "start": "2026-10-15T18:30",
-      "end": "2026-10-15T20:00",
-      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
-      "category": "post",
-      "description": "Three-course, family-style dinner at the Post with Southern dishes, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come solo, with friends or as a date night; 21+. $35 per person; tickets through Eventbrite. The menu is set, so anyone with food allergies or dietary needs should contact the chef before buying.",
-      "url": "https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002247493151",
-      "source": "Eventbrite (Chef's Soulful Compass)"
-    },
-    {
       "title": "OktoberVets 5K (VFW Post 152)",
       "start": "2026-10-17T10:00",
       "location": "Start: First Baptist Church, 44 Main St, North Kingstown; Finish: Town Docks, 61 Brown St, North Kingstown",
@@ -166,6 +136,16 @@
       "source": "WaterFire Providence"
     },
     {
+      "title": "Nathanael Greene, Rhode Island, and the Race to the Dan with Andrew Waters",
+      "start": "2026-11-09T18:00",
+      "end": "2026-11-09T19:00",
+      "location": "Aldrich House, 110 Benevolent Street, Providence, RI 02906",
+      "category": "area",
+      "description": "Rhode Island Historical Society talk by author Andrew Waters on how Nathanael Greene's Rhode Island upbringing shaped his Revolutionary War leadership, focusing on his Race to the Dan retreat across the Carolinas. Registration through the event page.",
+      "url": "https://www.rihs.org/event/nathanael-greene-rhode-island-and-the-race-to-the-dan-with-andrew-waters-2/",
+      "source": "Rhode Island Historical Society"
+    },
+    {
       "title": "Cranston Veterans Day Parade",
       "start": "2026-11-11T11:30",
       "end": "2026-11-11T12:30",
@@ -193,6 +173,16 @@
       "description": "Charity bingo night at VFW Post 449. Doors open at 4:00 p.m.; bingo starts at 5:00 p.m. $40 per person. Raffles, plus $500 and $1,000 jackpots. For details call George Russell at (401) 206-9829.",
       "url": "https://beige-clownfish-tdkf.squarespace.com/events",
       "source": "VFW Post 449 (event flyer)"
+    },
+    {
+      "title": "British Soldiers' Wives in the American Revolution: A Talk with Author Don Hagist",
+      "start": "2026-12-03T17:30",
+      "end": "2026-12-03T18:30",
+      "location": "The Museum at the John Brown House, 52 Power Street, Providence, RI 02906",
+      "category": "area",
+      "description": "Rhode Island Historical Society talk by author Don N. Hagist, based on his book Invisible Lives, on the wives of British soldiers during the American Revolution. Doors open 4:30pm for a reception and book signing; $10 general admission, $5 RIHS members; registration requested, seating limited.",
+      "url": "https://www.rihs.org/event/british-soldiers-wives-in-the-american-revolution-a-talk-with-author-don-hagist/",
+      "source": "Rhode Island Historical Society"
     },
     {
       "title": "The Dinner Circle: Mexican Mercado",
