@@ -331,3 +331,12 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 .bar-rules { border-top: 5px solid var(--gold); margin-top: .5rem; }
 .bar-rules ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .35rem 1.75rem; }
 .bar-rules li::before { content: "\2605"; color: var(--gold); margin-right: .45rem; }
+
+/* History: "A second start" (2024 to today) */
+.photo-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+.photo-row img { aspect-ratio: 4 / 3; object-fit: cover; }
+@media (max-width: 860px) { .photo-row { grid-template-columns: 1fr; } }
+.photo-credit { color: var(--muted); font-size: .9rem; margin-top: 1rem; }
+.photo-row.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 860px) { .photo-row.two { grid-template-columns: 1fr; } }
+.charter-wall { max-width: 560px; margin: 1.5rem 0; }
