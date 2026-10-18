@@ -64,10 +64,10 @@ window.SITE = {
      Share as vfw4651.org/survey.html?src=fb (or ?src=coaster, ?src=meeting…)
      and the Sheet records where each answer came from.                     */
   survey: {
-    action: "https://docs.google.com/forms/d/e/1FAIpQLSde9l2_PpOksUpVkXIDkkjdGrVGNTKi0aeVNr_1bomLadraGw/formResponse",
-    fallback: "https://docs.google.com/forms/d/e/1FAIpQLSde9l2_PpOksUpVkXIDkkjdGrVGNTKi0aeVNr_1bomLadraGw/viewform",
-    entries: { who: "entry.964822435", age: "entry.928132588", visits: "entry.1519277421", barriers: "entry.525447565",
-               wants: "entry.701512441", note: "entry.557344838", src: "entry.458592885" }
+    action: "https://docs.google.com/forms/d/e/1FAIpQLSc0jN8QWBLvUHlyN-MNe3cKpuC-X8YmE7ybu4wjkm575BJFuA/formResponse",
+    fallback: "https://docs.google.com/forms/d/e/1FAIpQLSc0jN8QWBLvUHlyN-MNe3cKpuC-X8YmE7ybu4wjkm575BJFuA/viewform",
+    entries: { who: "entry.446531098", age: "entry.275505919", visits: "entry.1621868863", barriers: "entry.782871276",
+               wants: "entry.1689079832", note: "entry.2096332872", src: "entry.1509392537" }
   },
 
   /* ---------- CALENDAR ----------
