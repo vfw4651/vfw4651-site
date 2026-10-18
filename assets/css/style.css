@@ -341,3 +341,24 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 .photo-row.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 860px) { .photo-row.two { grid-template-columns: 1fr; } }
 .charter-wall { max-width: 560px; margin: 1.5rem 0; }
+
+/* ---------- Survey (survey.html, unlisted) ---------- */
+.sv-wrap { max-width: 760px; }
+.sv-q { border: 1px solid var(--line); border-radius: var(--radius); background: #fff; padding: 1.25rem 1.25rem 1rem; margin: 0 0 1rem; }
+.sv-q legend, .sv-q > label { font-family: var(--head); font-weight: 700; font-size: 1.35rem; color: var(--navy); padding: 0; display: block; margin-bottom: .75rem; }
+.sv-q legend { float: left; width: 100%; }
+.sv-q legend + * { clear: both; }
+.sv-q small { display: block; font-family: var(--body); font-weight: 400; font-size: .95rem; color: var(--muted); margin-top: .15rem; }
+.sv-num { display: inline-grid; place-items: center; width: 1.7rem; height: 1.7rem; border-radius: 50%; background: var(--red); color: #fff; font-size: 1rem; margin-right: .55rem; vertical-align: .1em; }
+.sv-opts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+@media (max-width: 600px) { .sv-opts { grid-template-columns: 1fr; } }
+.sv-opt { display: flex; align-items: flex-start; gap: .6rem; border: 1px solid var(--line); border-radius: 8px; padding: .65rem .8rem; cursor: pointer; line-height: 1.3; background: var(--cream); }
+.sv-opt input { margin-top: .15rem; width: 1.1rem; height: 1.1rem; accent-color: var(--red); flex: none; }
+.sv-opt:has(input:checked) { border-color: var(--red); background: #fff; box-shadow: inset 0 0 0 1px var(--red); }
+.sv-opt:has(input:focus-visible) { outline: 3px solid var(--blue); outline-offset: 2px; }
+.sv-opt.off { opacity: .45; cursor: default; }
+.sv-note textarea { width: 100%; font: inherit; border: 1px solid var(--line); border-radius: 8px; padding: .7rem; }
+.sv-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.sv-msg { min-height: 1.4em; margin: .75rem 0; font-weight: 600; }
+.sv-msg.warn { color: var(--red); }
+.sv-done h2 { margin-top: 0; }

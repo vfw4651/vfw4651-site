@@ -58,6 +58,18 @@ window.SITE = {
        once), then paste the Feed ID here. Blank = a "Follow us" card shows.   */
   instagramFeedId: "iBiittcOruurApcZ2Eus",
 
+  /* ---------- SURVEY (survey.html, unlisted) ----------
+     Filled in from what tools/survey-setup.gs prints after it builds the
+     Post's Google Form. Blank = the page shows but sends nothing.
+     Share as vfw4651.org/survey.html?src=fb (or ?src=coaster, ?src=meeting…)
+     and the Sheet records where each answer came from.                     */
+  survey: {
+    action: "https://docs.google.com/forms/d/e/1FAIpQLSde9l2_PpOksUpVkXIDkkjdGrVGNTKi0aeVNr_1bomLadraGw/formResponse",
+    fallback: "https://docs.google.com/forms/d/e/1FAIpQLSde9l2_PpOksUpVkXIDkkjdGrVGNTKi0aeVNr_1bomLadraGw/viewform",
+    entries: { who: "entry.964822435", age: "entry.928132588", visits: "entry.1519277421", barriers: "entry.525447565",
+               wants: "entry.701512441", note: "entry.557344838", src: "entry.458592885" }
+  },
+
   /* ---------- CALENDAR ----------
      apiKey: a free Google Calendar API key (see SETUP.md, step 3).
      Leave blank to fall back to the embedded Google Calendar.
