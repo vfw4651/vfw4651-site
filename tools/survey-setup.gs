@@ -189,14 +189,14 @@ function setUpSurvey() {
 }
 
 /* ------------------------------------------------------------
-   fixSummary — one-time repair for the Sheet made on Oct 18, 2026.
+   fixSummary — one-time repair for the Sheet made on Oct 18, 2026 (9:16 a.m. build).
    Google Forms adds each answer by inserting a row, which pushed the
    Summary's "B2:B"-style ranges down a row (so the first answer was
    missed). This points every Summary formula at whole columns instead.
    Run it once from the same Apps Script project. Safe to run again.
    ------------------------------------------------------------ */
 function fixSummary() {
-  const ss = SpreadsheetApp.openById("1RnTDOIp-5oj72QsX27o2f4kcX15y-16id1fND2HUwpg");
+  const ss = SpreadsheetApp.openById("1mpGLA4eiO11Sa5ZCbREH4LCQBTM1v1OIVSp3mm3pQEk");
   const sum = ss.getSheetByName("Summary");
   sum.createTextFinder("!([A-H])\\d+:").useRegularExpression(true).matchFormulaText(true).replaceAllWith("!$1:");
   const b2 = sum.getRange("B2");
