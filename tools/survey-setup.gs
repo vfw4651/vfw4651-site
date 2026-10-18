@@ -148,10 +148,10 @@ function setUpSurvey() {
   const cols = ["B", "C", "D", "E", "F", "G", "H"];   // column A is the timestamp
   const reEsc = s => s.replace(/[.*+?^$()[\]{}|\\]/g, "\\$&");
   const rows = [["VFW Post 4651 — survey summary", "", ""],
-                ["Responses so far", "=COUNTA(" + R + "A2:A)", ""],
+                ["Responses so far", "=COUNTA(" + R + "A:A)-1", ""],
                 ["", "", ""]];
   QUESTIONS.forEach((q, i) => {
-    const col = R + cols[i] + "2:" + cols[i];
+    const col = R + cols[i] + ":" + cols[i];   // whole column: Forms inserts rows, which would shift "B2:B"
     rows.push([(i + 1) + ". " + q.q + (q.hint ? "  (" + q.hint + ")" : ""), "Count", "Share of responses"]);
     q.options.forEach(o => {
       const r = rows.length + 1;
@@ -166,7 +166,7 @@ function setUpSurvey() {
   rows.push(["Where people came from (the ?src= tag on the link)", "Count", ""]);
   summary.getRange(1, 1, rows.length, 3).setValues(rows);
   summary.getRange(rows.length + 1, 1).setFormula(
-    '=IFERROR(QUERY(' + R + 'H2:H, "select H, count(H) where H is not null group by H order by count(H) desc label count(H) \'\'", 0), "(none yet)")');
+    '=IFERROR(QUERY(' + R + 'H:H, "select H, count(H) where H is not null group by H order by count(H) desc label count(H) \'\'", 1), "(none yet)")');
   summary.getRange("C:C").setNumberFormat("0%");
   summary.getRange("A1").setFontSize(14).setFontWeight("bold");
   rows.forEach((r, i) => {
@@ -186,4 +186,24 @@ function setUpSurvey() {
     '    fallback: "' + viewUrl + '",\n' +
     "    entries: " + JSON.stringify(entries) + "\n" +
     "  },");
+}
+
+/* ------------------------------------------------------------
+   fixSummary — one-time repair for the Sheet made on Oct 18, 2026.
+   Google Forms adds each answer by inserting a row, which pushed the
+   Summary's "B2:B"-style ranges down a row (so the first answer was
+   missed). This points every Summary formula at whole columns instead.
+   Run it once from the same Apps Script project. Safe to run again.
+   ------------------------------------------------------------ */
+function fixSummary() {
+  const ss = SpreadsheetApp.openById("1RnTDOIp-5oj72QsX27o2f4kcX15y-16id1fND2HUwpg");
+  const sum = ss.getSheetByName("Summary");
+  sum.createTextFinder("!([A-H])\\d+:").useRegularExpression(true).matchFormulaText(true).replaceAllWith("!$1:");
+  const b2 = sum.getRange("B2");
+  b2.setFormula(b2.getFormula().replace(/COUNTA\(([^)]*)\)(-1)?/, "COUNTA($1)-1"));
+  sum.createTextFinder('"(none yet)"').matchFormulaText(true).findAll().forEach(c => {
+    c.setFormula(c.getFormula().replace(/, 0\), "\(none yet\)"\)/, ', 1), "(none yet)")'));
+  });
+  SpreadsheetApp.flush();
+  Logger.log("Responses counted: " + b2.getValue() + "  (should match the rows on the responses tab)");
 }
