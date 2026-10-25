@@ -1,47 +1,187 @@
 [
-  {"id": "11-officer-crum", "layout": "officer", "photo": "garry-crum.jpg", "photo_bg": "charter-wall.jpg",
-   "name": "Garry Crum", "office": "Post Commander",
-   "line": "Marine Corps and Rhode Island Air National Guard · Iraq. Took the gavel when the Post was a week from closing, and led the rebuild of the hall and the membership."},
-  {"id": "12-officer-brennan", "layout": "officer", "photo": "bernard-brennan.jpg", "photo_bg": "charter-wall.jpg",
-   "name": "Bernie Brennan", "office": "Senior Vice Commander",
-   "line": "Marine Corps Reserve, 2002–2013 · Iraq, twice, with 2/24. Runs the Post's website and membership drive. Thinking about joining? Ask for Bernie."},
-  {"id": "13-officer-myers", "layout": "officer", "photo": "eddie-myers.jpg", "photo_bg": "charter-wall.jpg",
-   "name": "Eddie Myers", "office": "Junior Vice Commander",
-   "line": "U.S. Army infantry, 2007–2012 · Iraq, twice. One of the people a newcomer can ask for at the door."},
-  {"id": "14-officer-burnham", "layout": "officer", "photo": "james-burnham.jpg", "photo_bg": "charter-wall.jpg",
-   "name": "James Burnham", "office": "Quartermaster",
-   "line": "U.S. Army · Iraq and Afghanistan. Looks after the Post's finances and records."},
-  {"id": "15-officer-credle", "layout": "officer", "photo": "micholas-credle.jpg", "photo_bg": "charter-wall.jpg",
-   "name": "Micholas Credle", "office": "Adjutant",
-   "line": "Retired U.S. Army captain · more than ten years' service, including West Point. Keeps the Post's correspondence and minutes."},
-
-  {"id": "16-post-meeting", "layout": "notice", "kicker": "Members' meeting",
-   "headline": "Last *Wednesday* of every month.", "line": "6 p.m. in the hall. Prospective members are welcome — come in and ask for an officer.",
-   "when": ["Next", "Oct 28", "Wednesday", "6:00 p.m."], "url": "https://vfw4651.org/calendar.html", "cta": "Scan for the full calendar"},
-  {"id": "17-aux-meeting", "layout": "notice", "kicker": "Auxiliary to Post 4651",
-   "headline": "Auxiliary meeting, last *Thursday* of the month.", "line": "6:30 p.m. Family of those who served overseas are eligible to join the Auxiliary.",
-   "when": ["Next", "Oct 29", "Thursday", "6:30 p.m."], "url": "https://vfw4651.org/auxiliary.html", "cta": "Scan to learn about the Auxiliary"},
-  {"id": "18-sunday-football", "layout": "notice", "kicker": "At the Canteen",
-   "headline": "Sunday *football*, every Sunday.", "line": "Canteen open noon to 9 p.m. with the day's NFL games on, from the 1:00 kickoffs through the night game.",
-   "when": ["Every", "Sunday", "Noon – 9 p.m.", "Through Jan 10"], "url": "https://vfw4651.org/canteen.html", "cta": "Scan for this week's games and menu",
-   "photo": "bar.jpg"},
-
-  {"id": "19-trivia", "layout": "notice", "kicker": "Trivia Night at the Post",
-   "headline": "Teams of four. Three rounds. One *winner*.", "line": "Hosted by Logiq & Kobi D., music by DJ Rukiz. Doors 7, trivia at 8. Free to play. Ten weeks, with a $500 finale.",
-   "when": ["Thursday", "Nov 5", "Doors 7 p.m.", "Trivia 8 p.m."], "url": "https://vfw4651.org/calendar.html", "cta": "Scan for the calendar"},
-  {"id": "20-dinner-circle", "layout": "story", "photo": "set-for-an-event.jpg", "photo_side": "right", "kicker": "The Dinner Circle",
-   "headline": "A seat at the *table*.", "line": "Three-course, family-style dinners at the Post by Chef Kimberly Andrade. Night in New Orleans, Nov 5 · Mexican Mercado, Dec 3 · Italian Trattoria, Dec 10. 6:30 p.m., $35, 21+.",
-   "url": "https://vfw4651.org/calendar.html", "cta": "Scan for tickets", "cta2": "and the full calendar"},
-  {"id": "21-feed-dating", "layout": "story", "photo": "lounge.jpg", "photo_side": "right", "kicker": "Feed Dating",
-   "headline": "Around the world in *8 dates*.", "line": "Culinary speed dating at the Post: eight 10-minute dates over six tasting courses. Thursday Oct 29 and Thursday Dec 17, 6:30 p.m. Limited to 8 women and 8 men, 21+, $75.",
-   "url": "https://vfw4651.org/calendar.html", "cta": "Scan for tickets"},
-  {"id": "22-halloween", "layout": "notice", "kicker": "'80s Halloween Party",
-   "headline": "Back to the *'80s*.", "line": "Costumes encouraged. Music, contests and prizes, inside the Post. Hosted by Jessica and Marissa.",
-   "when": ["Friday", "Oct 30", "8 p.m. – 1 a.m.", "7 Haven Ave"]},
-
-  {"id": "23-wings", "layout": "list", "kicker": "Canteen regular menu", "headline": "Wings, *fourteen* ways.",
-   "items": ["Sweet Chili", "Buffalo", "Sweet Lemon Butter", "BBQ", "Honey BBQ", "Hot Honey", "Spicy Garlic Parmesan", "Lemon Pepper", "Lime Pepper", "Orange Pepper", "Mango Pepper", "Cajun", "Ranch", "Chipotle Ranch"],
-   "note": "Eight pieces $12 · wings and fries $15 · served with ranch or blue cheese. Please tell your server about any food allergies.", "photo": "bar.jpg"},
-  {"id": "24-hall", "layout": "photo", "photo": "main-hall.jpg", "photo_anchor": 0.5,
-   "headline": "The hall is yours to book.", "line": "Birthdays, showers, repasts, meetings, watch parties — up to 90 guests. Call the Post and press 2, or see vfw4651.org/event-spaces.html"}
+ {
+  "id": "11-officer-crum",
+  "layout": "officer",
+  "photo": "garry-crum.jpg",
+  "photo_bg": "charter-wall.jpg",
+  "name": "Garry Crum",
+  "office": "Post Commander",
+  "line": "Marine Corps and Rhode Island Air National Guard · Iraq. Took the gavel when the Post was a week from closing, and led the rebuild of the hall and the membership."
+ },
+ {
+  "id": "12-officer-brennan",
+  "layout": "officer",
+  "photo": "bernard-brennan.jpg",
+  "photo_bg": "charter-wall.jpg",
+  "name": "Bernie Brennan",
+  "office": "Senior Vice Commander",
+  "line": "Marine Corps Reserve, 2002–2013 · Iraq, twice, with 2/24. Runs the Post's website and membership drive. Thinking about joining? Ask for Bernie."
+ },
+ {
+  "id": "13-officer-myers",
+  "layout": "officer",
+  "photo": "eddie-myers.jpg",
+  "photo_bg": "charter-wall.jpg",
+  "name": "Eddie Myers",
+  "office": "Junior Vice Commander",
+  "line": "U.S. Army infantry, 2007–2012 · Iraq, twice. One of the people a newcomer can ask for at the door."
+ },
+ {
+  "id": "14-officer-burnham",
+  "layout": "officer",
+  "photo": "james-burnham.jpg",
+  "photo_bg": "charter-wall.jpg",
+  "name": "James Burnham",
+  "office": "Quartermaster",
+  "line": "U.S. Army · Iraq and Afghanistan. Looks after the Post's finances and records."
+ },
+ {
+  "id": "15-officer-credle",
+  "layout": "officer",
+  "photo": "micholas-credle.jpg",
+  "photo_bg": "charter-wall.jpg",
+  "name": "Micholas Credle",
+  "office": "Adjutant",
+  "line": "Retired U.S. Army captain · more than ten years' service, including West Point. Keeps the Post's correspondence and minutes."
+ },
+ {
+  "id": "16-post-meeting",
+  "layout": "notice",
+  "kicker": "Members' meeting",
+  "headline": "Last *Wednesday* of every month.",
+  "line": "6 p.m. in the hall. Prospective members are welcome — come in and ask for an officer.",
+  "when": [
+   "Next",
+   "Oct 28",
+   "Wednesday",
+   "6:00 p.m."
+  ],
+  "url": "https://vfw4651.org/calendar.html",
+  "cta": "Scan for the full calendar"
+ },
+ {
+  "id": "17-aux-meeting",
+  "layout": "notice",
+  "kicker": "Auxiliary to Post 4651",
+  "headline": "Auxiliary meeting, last *Thursday* of the month.",
+  "line": "6:30 p.m. Family of those who served overseas are eligible to join the Auxiliary.",
+  "when": [
+   "Next",
+   "Oct 29",
+   "Thursday",
+   "6:30 p.m."
+  ],
+  "url": "https://vfw4651.org/auxiliary.html",
+  "cta": "Scan to learn about the Auxiliary"
+ },
+ {
+  "id": "18-sunday-football",
+  "layout": "notice",
+  "kicker": "At the Canteen",
+  "headline": "Sunday *football*, every Sunday.",
+  "line": "Canteen open noon to 9 p.m. with the day's NFL games on, from the 1:00 kickoffs through the night game.",
+  "when": [
+   "Every",
+   "Sunday",
+   "Noon – 9 p.m.",
+   "Through Jan 10"
+  ],
+  "url": "https://vfw4651.org/canteen.html",
+  "cta": "Scan for this week's games and menu",
+  "photo": "bar.jpg"
+ },
+ {
+  "id": "19-trivia",
+  "layout": "notice",
+  "kicker": "Trivia Night at the Post",
+  "headline": "Teams of four. Three rounds. One *winner*.",
+  "line": "Hosted by Logiq & Kobi D., music by DJ Rukiz. Doors 7, trivia at 8. Free to play. Ten weeks, with a $500 finale.",
+  "when": [
+   "Thursday",
+   "Nov 5",
+   "Doors 7 p.m.",
+   "Trivia 8 p.m."
+  ],
+  "url": "https://vfw4651.org/calendar.html",
+  "cta": "Scan for the calendar"
+ },
+ {
+  "id": "20-dinner-circle",
+  "layout": "story",
+  "photo": "set-for-an-event.jpg",
+  "photo_side": "right",
+  "kicker": "The Dinner Circle",
+  "headline": "A seat at the *table*.",
+  "line": "Three-course, family-style dinners at the Post by Chef Kimberly Andrade. Night in New Orleans, Nov 5 · Mexican Mercado, Dec 3 · Italian Trattoria, Dec 10. 6:30 p.m., $35, 21+.",
+  "url": "https://vfw4651.org/calendar.html",
+  "cta": "Scan for tickets",
+  "cta2": "and the full calendar"
+ },
+ {
+  "id": "21-feed-dating",
+  "layout": "story",
+  "photo": "lounge.jpg",
+  "photo_side": "right",
+  "kicker": "Feed Dating",
+  "headline": "Around the world in *8 dates*.",
+  "line": "Culinary speed dating at the Post: eight 10-minute dates over six tasting courses. Thursday Oct 29 and Thursday Dec 17, 6:30 p.m. Limited to 8 women and 8 men, 21+, $75.",
+  "url": "https://vfw4651.org/calendar.html",
+  "cta": "Scan for tickets"
+ },
+ {
+  "id": "22-halloween",
+  "layout": "notice",
+  "kicker": "'80s Halloween Party",
+  "headline": "Back to the *'80s*.",
+  "line": "Costumes encouraged. Music, contests and prizes, inside the Post. Hosted by Jessica and Marissa.",
+  "when": [
+   "Friday",
+   "Oct 30",
+   "8 p.m. – 1 a.m.",
+   "7 Haven Ave"
+  ]
+ },
+ {
+  "id": "23-wings",
+  "layout": "list",
+  "kicker": "Canteen regular menu",
+  "headline": "Wings, *fourteen* ways.",
+  "items": [
+   "Sweet Chili",
+   "Buffalo",
+   "Sweet Lemon Butter",
+   "BBQ",
+   "Honey BBQ",
+   "Hot Honey",
+   "Spicy Garlic Parmesan",
+   "Lemon Pepper",
+   "Lime Pepper",
+   "Orange Pepper",
+   "Mango Pepper",
+   "Cajun",
+   "Ranch",
+   "Chipotle Ranch"
+  ],
+  "note": "Eight pieces $12 · wings and fries $15 · served with ranch or blue cheese. Please tell your server about any food allergies.",
+  "photo": "bar.jpg"
+ },
+ {
+  "id": "24-hall",
+  "layout": "photo",
+  "photo": "main-hall.jpg",
+  "photo_anchor": 0.5,
+  "headline": "The hall is yours to book.",
+  "line": "Birthdays, showers, repasts, meetings, watch parties — up to 90 guests. Call the Post and press 2, or see vfw4651.org/event-spaces.html"
+ },
+ {
+  "id": "25-sign",
+  "layout": "sign",
+  "photo": "post-sign.png",
+  "line": "7 Haven Avenue, Cranston · Since November 10, 1986"
+ },
+ {
+  "id": "26-sign-plain",
+  "layout": "sign",
+  "photo": "post-sign.png"
+ }
 ]

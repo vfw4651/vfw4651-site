@@ -234,7 +234,22 @@ def layout_list(s):
     if s.get("note"): body(d, x, H - FOOT_H - 110, s["note"], 38, 1000, color=MUTED)
     return canvas
 
-LAYOUTS = {"story": layout_story, "notice": layout_notice, "officer": layout_officer, "photo": layout_photo, "list": layout_list}
+def layout_sign(s):
+    """The Post sign (assets/img/post-sign.svg rendered to PNG) centred on navy, with an optional line under it."""
+    canvas = Image.new("RGB", (W, H), NAVY); d = ImageDraw.Draw(canvas)
+    im = Image.open(find(s.get("photo", "post-sign.png"))).convert("RGBA")
+    maxw, maxh = 1500, H - FOOT_H - (260 if s.get("line") else 120)
+    r = min(maxw / im.width, maxh / im.height); im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
+    y = (H - FOOT_H - im.height - (120 if s.get("line") else 0)) // 2
+    canvas.paste(im, ((W - im.width) // 2, y), im)
+    if s.get("line"):
+        f = font("cond", 60); ly = y + im.height + 50
+        cx = W // 2
+        for ln in s["line"].split("\n"):
+            d.text((cx, ly), ln.upper(), font=f, fill=GOLD, anchor="ma"); ly += 72
+    return canvas
+
+LAYOUTS = {"sign": layout_sign, "story": layout_story, "notice": layout_notice, "officer": layout_officer, "photo": layout_photo, "list": layout_list}
 
 def main():
     if len(sys.argv) < 2: raise SystemExit(__doc__)
