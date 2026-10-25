@@ -1,5 +1,5 @@
 {
-  "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community | post. Always include the organizer's page in \"url\" so members can confirm details.",
+  "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community. Post and Auxiliary events belong in data/events-post.json, not here. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
       "title": "Varnum Armory Museum Free Open House",
@@ -51,51 +51,14 @@
       "source": "Rose Island Lighthouse and Fort Hamilton Trust / RI250 Commission"
     },
     {
-      "title": "Feed Dating: Around the World in 8 Dates",
-      "start": "2026-10-29T18:30",
-      "end": "2026-10-29T21:30",
-      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
-      "category": "post",
-      "description": "Culinary speed dating at the Post, hosted by Chef Kimberly Andrade (Chef's Soulful Compass). Eight 10-minute dates over six internationally inspired tasting courses. Limited to 8 women and 8 men; 21+. $75 per person, with an optional $5 donation to the Post; tickets through Eventbrite. The menu is fixed and cannot accommodate allergies or dietary restrictions.",
-      "url": "https://www.eventbrite.com/e/feed-dating-presents-around-the-world-in-8-dates-culinary-speed-dating-tickets-2002246508205",
-      "source": "Eventbrite (Chef's Soulful Compass)"
-    },
-    {
-      "title": "'80s Halloween Party at the Post",
-      "start": "2026-10-30T20:00",
-      "end": "2026-10-31T01:00",
-      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
-      "category": "post",
-      "description": "Back-to-the-'80s Halloween party inside the Post, hosted by Jessica and Marissa. Costumes encouraged, with music, contests and prizes.",
-      "source": "Event flyer"
-    },
-    {
       "title": "From Slaves to Soldiers: The 1st Rhode Island Regiment, with Robert A. Geake",
       "start": "2026-11-05T18:30",
       "end": "2026-11-05T20:00",
       "location": "North Kingstown Town Hall (2nd Floor), 80 Boston Neck Road, North Kingstown, RI",
       "category": "area",
-      "description": "HistWick Speaker Series talk on the 1st Rhode Island Regiment \u2014 the Continental Army unit of African American and Native American enlisted men known as the Black Regiment \u2014 presented by historian and author Robert A. Geake.",
+      "description": "HistWick Speaker Series talk on the 1st Rhode Island Regiment — the Continental Army unit of African American and Native American enlisted men known as the Black Regiment — presented by historian and author Robert A. Geake.",
       "url": "https://histwick.org/events/2026-11-05/",
       "source": "HistWick"
-    },
-    {
-      "title": "The Dinner Circle: Night in New Orleans",
-      "start": "2026-11-05T18:30",
-      "end": "2026-11-05T20:00",
-      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
-      "category": "post",
-      "description": "Three-course, family-style dinner at the Post with Louisiana dishes, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come solo, with friends or as a date night; 21+. $35 per person; tickets through Eventbrite. The menu is set, so anyone with food allergies or dietary needs should contact the chef before buying.",
-      "url": "https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002247493151",
-      "source": "Eventbrite (Chef's Soulful Compass)"
-    },
-    {
-      "title": "Trivia Night at the Post",
-      "start": "2026-11-05T19:00",
-      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
-      "category": "post",
-      "description": "Weekly trivia night at the Post, hosted by Logiq & Kobi D. with music by DJ Rukiz. Teams of four, three rounds, one winner each week; categories include music, TV theme songs, movies, sports and general knowledge. Doors open at 7 p.m.; trivia starts at 8. Free admission. The 10-week season ends with a finale for a $500 prize.",
-      "source": "Event flyer"
     },
     {
       "title": "Westerly Veterans Day Parade",
@@ -132,7 +95,7 @@
       "end": "2026-11-11T15:00",
       "location": "Newport Family & Cosmetic Dentistry, Newport, RI",
       "category": "benefits",
-      "description": "Free cleanings, X-rays, exams, fillings and extractions for veterans on Veterans Day. For veterans only; appointments required \u2014 call 401-250-2005.",
+      "description": "Free cleanings, X-rays, exams, fillings and extractions for veterans on Veterans Day. For veterans only; appointments required — call 401-250-2005.",
       "source": "Newport Family & Cosmetic Dentistry (event flyer)"
     },
     {
@@ -222,26 +185,6 @@
       "source": "Rhode Island Historical Society"
     },
     {
-      "title": "The Dinner Circle: Mexican Mercado",
-      "start": "2026-12-03T18:30",
-      "end": "2026-12-03T20:00",
-      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
-      "category": "post",
-      "description": "Three-course, family-style dinner at the Post with Mexican favorites, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come solo, with friends or as a date night; 21+. $35 per person; tickets through Eventbrite. The menu is set, so anyone with food allergies or dietary needs should contact the chef before buying.",
-      "url": "https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002247493151",
-      "source": "Eventbrite (Chef's Soulful Compass)"
-    },
-    {
-      "title": "The Dinner Circle: Italian Trattoria",
-      "start": "2026-12-10T18:30",
-      "end": "2026-12-10T20:00",
-      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
-      "category": "post",
-      "description": "Three-course, family-style dinner at the Post with Italian classics, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come solo, with friends or as a date night; 21+. $35 per person; tickets through Eventbrite. The menu is set, so anyone with food allergies or dietary needs should contact the chef before buying.",
-      "url": "https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002247493151",
-      "source": "Eventbrite (Chef's Soulful Compass)"
-    },
-    {
       "title": "VFW Post 449 Holiday Party",
       "start": "2026-12-11T16:30",
       "end": "2026-12-11T23:30",
@@ -250,16 +193,6 @@
       "description": "Holiday party hosted by VFW Post 449.",
       "url": "https://beige-clownfish-tdkf.squarespace.com/events",
       "source": "VFW Post 449"
-    },
-    {
-      "title": "Feed Dating: Around the World in 8 Dates",
-      "start": "2026-12-17T18:30",
-      "end": "2026-12-17T21:30",
-      "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
-      "category": "post",
-      "description": "Culinary speed dating at the Post, hosted by Chef Kimberly Andrade (Chef's Soulful Compass). Eight 10-minute dates over six internationally inspired tasting courses. Limited to 8 women and 8 men; 21+. $75 per person, with an optional $5 donation to the Post; tickets through Eventbrite. The menu is fixed and cannot accommodate allergies or dietary restrictions.",
-      "url": "https://www.eventbrite.com/e/feed-dating-presents-around-the-world-in-8-dates-culinary-speed-dating-tickets-2002246508205",
-      "source": "Eventbrite (Chef's Soulful Compass)"
     }
   ]
 }

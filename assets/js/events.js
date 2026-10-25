@@ -37,15 +37,60 @@
       category: detectCategory(desc, cal.category), source: cal.label
     };
   }
-  function normStatic(e, i) {
+  function normStatic(e, i, opts) {
+    opts = opts || {};
     const allDay = !!e.allDay || (e.start && e.start.length === 10);
     const start = allDay ? parseLocalDate(e.start.slice(0, 10)) : new Date(e.start);
     const end = e.end ? (allDay ? parseLocalDate(e.end.slice(0, 10)) : new Date(e.end)) : start;
     const desc = e.description || "";
     return {
-      id: "s-" + i, title: e.title, start, end, allDay, location: e.location || "", desc,
-      url: e.url || "", category: detectCategory(desc, e.category || "area"), source: e.source || "", external: true
+      id: (opts.prefix || "s-") + i, title: e.title, start, end, allDay, location: e.location || "", desc,
+      url: e.url || "", category: detectCategory(desc, e.category || opts.category || "area"),
+      source: e.source || opts.source || "", external: opts.external !== false
     };
+  }
+
+  // ----- repeating Post events (data/events-post.json "repeating") -----
+  // A rule is expanded into dated instances inside [from, to]. See the file's _help for the fields.
+  const DOW = { sunday: 0, monday: 1, tuesday: 2, wednesday: 3, thursday: 4, friday: 5, saturday: 6 };
+  const NTH = { first: 1, second: 2, third: 3, fourth: 4, last: -1 };
+  function nthWeekday(y, m, dow, which) {           // which: 1..4 or -1 for last; m is 0-based
+    if (which === -1) { const d = new Date(y, m + 1, 0); d.setDate(d.getDate() - ((d.getDay() - dow + 7) % 7)); return d; }
+    const d = new Date(y, m, 1); d.setDate(1 + ((dow - d.getDay() + 7) % 7) + 7 * (which - 1)); return d;
+  }
+  function expandRule(r, from, to) {
+    const dow = DOW[String(r.weekday || "").toLowerCase()], which = NTH[String(r.which || "last").toLowerCase()];
+    if (dow == null) return [];
+    const lo = r.from ? parseLocalDate(r.from) : new Date(from.getFullYear(), from.getMonth(), 1);
+    const hi = r.until ? parseLocalDate(r.until) : to;
+    const moves = r.moves || {}, skip = new Set(r.skip || []);
+    const days = [];
+    if (r.every === "week") {
+      const d = new Date(Math.max(lo, from)); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + ((dow - d.getDay() + 7) % 7));
+      for (; d <= to && d <= hi; d.setDate(d.getDate() + 7)) days.push(new Date(d));
+    } else {
+      for (let y = from.getFullYear(), m = from.getMonth(); new Date(y, m, 1) <= to; m++) {
+        if (m > 11) { m = 0; y++; }
+        days.push(nthWeekday(y, m, dow, which));
+      }
+    }
+    const out = [];
+    days.forEach(d => {
+      const k = dayKey(d);
+      if (skip.has(k) || moves[k] === "") return;             // cancelled, or moved with no new date yet
+      const day = moves[k] ? parseLocalDate(moves[k]) : d;
+      if (day < lo || day > hi) return;
+      const [h1, n1] = (r.time || "00:00").split(":").map(Number);
+      const start = new Date(day.getFullYear(), day.getMonth(), day.getDate(), h1, n1);
+      let end = start;
+      if (r.end) { const [h2, n2] = r.end.split(":").map(Number); end = new Date(day.getFullYear(), day.getMonth(), day.getDate(), h2, n2); if (end < start) end.setDate(end.getDate() + 1); }
+      if (end < from || start > to) return;
+      out.push({ id: "r-" + (r.id || r.title) + "-" + dayKey(day), title: r.title, start, end, allDay: !r.time,
+        location: r.location || "", desc: r.description || "", url: r.url || "",
+        category: detectCategory(r.description, r.category || "post"), source: "Post 4651", external: false,
+        moved: moves[k] ? k : "" });
+    });
+    return out;
   }
 
   async function fromGoogle(cal, from, to) {
@@ -61,17 +106,26 @@
     // an event shows here only if its own visibility is set to Public.
     return (j.items || []).filter(i => i.status !== "cancelled" && i.start && i.summary).map(i => normGoogle(i, cal));
   }
-  async function fromStatic(from, to) {
+  async function fromStatic(from, to) {           // outside events: data/events-area.json
     if (!C.staticFile) return [];
     const r = await fetch(C.staticFile, { cache: "no-cache" });
-    if (!r.ok) throw new Error("Static events file: HTTP " + r.status);
+    if (!r.ok) throw new Error("Area events file: HTTP " + r.status);
     const j = await r.json();
-    return (j.events || []).map(normStatic).filter(e => e.end >= from && e.start <= to);
+    return (j.events || []).map((e, i) => normStatic(e, i)).filter(e => e.end >= from && e.start <= to);
+  }
+  async function fromPost(from, to) {             // the Post's own calendar: data/events-post.json
+    if (!C.postFile) return [];
+    const r = await fetch(C.postFile, { cache: "no-cache" });
+    if (!r.ok) throw new Error("Post events file: HTTP " + r.status);
+    const j = await r.json();
+    const one = (j.events || []).map((e, i) => normStatic(e, i, { prefix: "p-", category: "post", source: "Post 4651", external: false }));
+    const rep = (j.repeating || []).flatMap(rule => expandRule(rule, from, to));
+    return one.concat(rep).filter(e => e.end >= from && e.start <= to);
   }
 
   async function loadEvents(from, to) {
     const errors = [];
-    const jobs = [fromStatic(from, to).catch(e => { errors.push(e.message); return []; })];
+    const jobs = [fromPost(from, to), fromStatic(from, to)].map(p => p.catch(e => { errors.push(e.message); return []; }));
     if (C.apiKey) C.calendars.forEach(cal => jobs.push(fromGoogle(cal, from, to).catch(e => { errors.push(e.message); return []; })));
     const all = (await Promise.all(jobs)).flat().sort((a, b) => a.start - b.start);
     return { events: all, errors };
@@ -124,7 +178,7 @@
     const loc = e.location ? " · " + esc(e.location) : "";
     const more = (e.desc || e.url) && !opts.compact ? `<details><summary>Details</summary>
       ${e.desc ? `<div class="desc">${linkify(e.desc)}</div>` : ""}
-      ${e.url ? `<p><a href="${esc(e.url)}" target="_blank" rel="noopener">${e.external ? "Organizer's page" : "View on Google Calendar"} ↗</a>${e.source ? " <span class='meta'>(" + esc(e.source) + ")</span>" : ""}</p>` : ""}
+      ${e.url ? `<p><a href="${esc(e.url)}" target="_blank" rel="noopener">${e.id.startsWith("g-") ? "View on Google Calendar" : e.external ? "Organizer's page" : "Tickets & details"} ↗</a>${e.source ? " <span class='meta'>(" + esc(e.source) + ")</span>" : ""}</p>` : ""}
     </details>` : "";
     li.innerHTML = `<div class="date" aria-hidden="true"><div class="m">${e.start.toLocaleDateString("en-US", { month: "short" })}</div><div class="d">${e.start.getDate()}</div><div class="w">${e.start.toLocaleDateString("en-US", { weekday: "short" })}</div></div>
       <div><h3>${esc(e.title)}</h3><div class="meta"><span class="tag">${esc(cat.label)}</span><time datetime="${e.start.toISOString()}">${fmtDate(e.start, { weekday: "long", month: "long", day: "numeric" })}</time> · ${whenText(e)}${loc}</div></div>
@@ -133,5 +187,5 @@
     return li;
   }
 
-  window.VFWEvents = { loadEvents, eventCard, downloadIcs, googleAddUrl, esc, linkify, whenText, fmtDate, fmtTime, dayKey, CATS };
+  window.VFWEvents = { loadEvents, expandRule, eventCard, downloadIcs, googleAddUrl, esc, linkify, whenText, fmtDate, fmtTime, dayKey, CATS };
 })();

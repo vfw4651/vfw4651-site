@@ -16,15 +16,15 @@ window.SITE = {
 
   /* ---------- NEXT MEETING ----------
      The "Next meeting" line on Home and Join Us is read from the Post's
-     Google Calendar: the next event whose title contains meetingTitle.
-     Move or rename the meeting on the calendar and the site follows.
+     own calendar file, data/events-post.json: the next event whose title
+     contains meetingTitle. To move a meeting, add the usual date and the
+     new one to that rule's "moves" (or "skip" to cancel one).
 
-     If the calendar can't be reached, the site falls back to the
-     last-Wednesday rule, adjusted by the list below
-     ("usual date": "new date", or "" for "date to be announced").            */
+     meetingChanges below is only the fallback if the file can't be read:
+     "usual date": "new date", or "" for "date to be announced".             */
   meetingTitle: "Post Members Meeting",
   meetingChanges: {
-    // e.g. "2026-12-30": "2026-12-16"   (moved from the last Thursday to the last Wednesday, Oct 2026)
+    // e.g. "2026-12-30": "2026-12-16"
   },
 
   /* Who a prospective member should ask for (first names, shown on Home and Join Us). */
@@ -71,24 +71,26 @@ window.SITE = {
   },
 
   /* ---------- CALENDAR ----------
-     apiKey: a free Google Calendar API key (see SETUP.md, step 3).
-     Leave blank to fall back to the embedded Google Calendar.
-     Every Google Calendar listed must be set to "Make available to public".
+     The site's calendar is built from two files in data/ (no Google
+     Calendar, no API key):
+       postFile   — the Post's own events: repeating rules (meetings,
+                    Sunday football) plus one-off Post events. Authoritative.
+       staticFile — hand-curated outside events (area, benefits, community),
+                    refreshed weekly.
+     calendar.ics in the site root is generated from postFile by
+     tools/make-ics.py so members can subscribe on their phones.
      category is one of: post | area | benefits | community
-     (You can override per event by typing #post #area #benefits or #community
-      anywhere in the event's description.)                                    */
+     (Override per event by typing #post #area #benefits or #community
+      anywhere in the event's description.)
+     Optional: a Google Calendar API key and public calendars can still be
+     merged in — set apiKey and calendars as before (see SETUP.md).         */
   calendar: {
     timezone: "America/New_York",
-    apiKey: "AIzaSyARzwefl5E7tiKClIxdIGOWbbVdq8xWkU0",   // public by design; locked in Google Cloud to vfw4651.org and the Calendar API
-    calendars: [
-      { id: "a5a5c40d454630ff2b756e708a15d080c71144c16aec55b2b0f772350cffb6e4@group.calendar.google.com",
-        label: "Post 4651 Calendar", category: "post", primary: true }
-      // Add more shared/public calendars here, for example:
-      // { id: "xxxx@group.calendar.google.com", label: "Area Veteran Events", category: "area" },
-      // { id: "yyyy@group.calendar.google.com", label: "Benefits & Services", category: "benefits" },
-    ],
-    // Hand-curated events for outside organizations live in data/events-area.json
-    staticFile: "data/events-area.json"
+    postFile: "data/events-post.json",
+    staticFile: "data/events-area.json",
+    icsFile: "calendar.ics",
+    apiKey: "",
+    calendars: []
   },
 
   categories: {

@@ -1,7 +1,7 @@
 # VFW Post 4651 website — setup & upkeep
 
 This is a plain website (no database, no monthly fee). Everything you'll ever edit is in
-`assets/js/config.js`, the calendar itself (Google Calendar), and `data/events-area.json`.
+`assets/js/config.js`, the Post's own calendar file `data/events-post.json`, and `data/events-area.json` for outside events.
 
 ## 1. Preview it
 Unzip and double-click `index.html`. (The calendar's event loading needs a web server, so use step 2 to see the real thing.)
@@ -13,13 +13,10 @@ Recommended: **Cloudflare Pages** (or Netlify — same idea).
 3. Update the DNS at wherever you registered the domain (currently pointing at Google Sites). The old site keeps working until you switch, so you can launch when ready. Switching takes minutes to a few hours.
 4. To update the site later, upload the folder again (or connect a GitHub repo for automatic updates).
 
-## 3. Turn on the full custom calendar (one-time, ~10 minutes)
-Without this step the Calendar page still works: it shows your embedded Google Calendar plus the outside events list.
-With it, all calendars merge into one filterable list/month view with "Add to Google/Apple" buttons.
-1. Go to console.cloud.google.com, create a project ("VFW 4651 site"), then *APIs & Services → Library → Google Calendar API → Enable*.
-2. *Credentials → Create credentials → API key*. Then click the key and set **Application restrictions → Websites** to `https://vfw4651.org/*` and `https://www.vfw4651.org/*`, and **API restrictions → Google Calendar API**. (The key is visible on the website by design; these restrictions keep it safe.)
-3. Paste the key into `apiKey` in `config.js`.
-4. Make sure every calendar you list is public: Google Calendar → calendar *Settings and sharing → Access permissions → Make available to public*.
+## 3. The Post's calendar (no Google account needed)
+Post and Auxiliary events live in `data/events-post.json`: a `repeating` list of rules (the members' meeting, the Auxiliary meeting, Sunday football) and an `events` list of one-off Post events. The file's `_help` line explains every field. To move or cancel one occurrence of a repeating event, add it to that rule's `moves` or `skip`. After editing, run `python3 tools/make-ics.py` to rebuild `calendar.ics` (the feed members subscribe to), then commit both files and push. The "Next meeting" line on Home and Join Us reads the same file.
+
+Optional: public Google Calendars can still be merged in by setting `apiKey` and `calendars` in `config.js` (free key from console.cloud.google.com, restricted to the Calendar API and to `https://vfw4651.org/*`).
 
 ## 4. Build the calendar's "area events" layers
 Categories: **Post & Auxiliary**, **Veteran & Military**, **Benefits & Services**, **Community & Family**.

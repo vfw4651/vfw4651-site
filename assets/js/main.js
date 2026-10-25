@@ -68,7 +68,7 @@
   document.querySelectorAll('a[data-site="facebook"]').forEach(a => { if (a.textContent.trim() === "Facebook") a.textContent = S.links.facebookPage ? "Our Facebook page" : "Our Facebook group"; });
   document.querySelectorAll("[data-fb-group]").forEach(li => { li.hidden = !FB_GROUP; });
 
-  // ----- next meeting: [data-next-meeting], worked out from the "last Wednesday" rule -----
+  // ----- next meeting: [data-next-meeting], from data/events-post.json (fallback: the "last Wednesday" rule) -----
   // S.meetingChanges maps a usual date to a moved date ("" = not set yet).
   (function () {
     const els = document.querySelectorAll("[data-next-meeting]");
@@ -91,9 +91,9 @@
     }
     els.forEach(el => { el.textContent = text || S.meetings; });
 
-    // With a calendar key, the Post's Google Calendar is the source of truth.
+    // The Post's calendar file (data/events-post.json) is the source of truth.
     const C = S.calendar || {};
-    if (!C.apiKey || !S.meetingTitle || !E) return;
+    if (!S.meetingTitle || !E) return;
     const want = S.meetingTitle.toLowerCase(), tz = C.timezone;
     E.loadEvents(now, new Date(now.getTime() + 100 * 86400000)).then(({ events }) => {
       const m = events.find(e => !e.external && !e.allDay && e.end >= now && e.title.toLowerCase().includes(want));

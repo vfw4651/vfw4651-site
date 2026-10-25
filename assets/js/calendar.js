@@ -5,7 +5,6 @@
   const esc = E.esc;
   const state = { view: "list", cats: new Set(Object.keys(S.categories)), q: "", cursor: new Date(), events: [] };
   state.cursor.setDate(1);
-  const hasKey = !!C.apiKey;
 
   // ----- toolbar -----
   const chips = $("#chips");
@@ -26,7 +25,13 @@
 
   // ----- subscribe box -----
   const sub = $("#subscribe-links");
-  C.calendars.forEach(c => {
+  if (C.icsFile) {
+    const abs = new URL(C.icsFile, location.href).href, webcal = abs.replace(/^https?:/, "webcal:");
+    const li = document.createElement("li");
+    li.innerHTML = `<strong>Post 4651 Calendar</strong>: <a href="${esc(webcal)}">Subscribe on iPhone / Apple Calendar</a> · <a target="_blank" rel="noopener" href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl?cid=${encodeURIComponent(abs)}">Add to Google Calendar</a> · <a href="${esc(abs)}" download>Download (.ics)</a><br><span class="meta">Meetings, Sunday football and Post events. Updates on your phone by itself.</span>`;
+    sub.appendChild(li);
+  }
+  (C.calendars || []).forEach(c => {
     const enc = encodeURIComponent(c.id);
     const li = document.createElement("li");
     li.innerHTML = `<strong>${esc(c.label)}</strong>: <a target="_blank" rel="noopener" href="https://calendar.google.com/calendar/u/0/r?cid=${enc}">Add to Google Calendar</a> · <a href="webcal://calendar.google.com/calendar/ical/${enc}/public/basic.ics">Apple / Outlook (iCal)</a>`;
@@ -100,19 +105,6 @@
   });
   $("#dlg-x").onclick = () => dlg.close();
   dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
-
-  // ----- no-API-key fallback: embedded Google Calendar for the post calendar -----
-  if (!hasKey) {
-    const p = C.calendars.find(c => c.primary) || C.calendars[0];
-    if (p) {
-      const src = "https://calendar.google.com/calendar/embed?" + new URLSearchParams({ src: p.id, ctz: C.timezone, mode: "AGENDA", showTitle: "0", showPrint: "0", showTz: "0", color: "#1b4f9c" });
-      $("#fallback").hidden = false;
-      $("#fallback-frame").innerHTML = `<iframe class="gcal" title="Post 4651 calendar" src="${esc(src)}" loading="lazy"></iframe>`;
-    }
-    $("#area-h").hidden = false;
-    // In fallback mode the custom views show outside events only
-    state.cats.delete("post"); const pc = chips.querySelector('[data-k="post"]'); if (pc) pc.setAttribute("aria-pressed", "false");
-  }
 
   // ----- go -----
   out.innerHTML = `<div class="empty">Loading events…</div>`;

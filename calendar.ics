@@ -1,0 +1,192 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//VFW Post 4651//vfw4651.org//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:VFW Post 4651
+X-WR-TIMEZONE:America/New_York
+X-PUBLISHED-TTL:PT12H
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:post-meeting@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261028T180000
+DTEND;TZID=America/New_York:20261028T190000
+SUMMARY:Post Members Meeting
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Monthly meeting of the Post's members. Prospective members are 
+ welcome to come in and ask for an officer.
+RRULE:FREQ=MONTHLY;BYDAY=-1WE
+END:VEVENT
+BEGIN:VEVENT
+UID:aux-meeting@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261029T183000
+DTEND;TZID=America/New_York:20261029T193000
+SUMMARY:Auxiliary Meeting
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Monthly meeting of the Auxiliary to VFW Post 4651.
+RRULE:FREQ=MONTHLY;BYDAY=-1TH
+EXDATE;TZID=America/New_York:20261126T183000
+EXDATE;TZID=America/New_York:20261231T183000
+END:VEVENT
+BEGIN:VEVENT
+UID:aux-meeting-2026-11-19@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261119T183000
+DTEND;TZID=America/New_York:20261119T193000
+SUMMARY:Auxiliary Meeting
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Monthly meeting of the Auxiliary to VFW Post 4651.\nMoved from 
+ the usual date (2026-11-26).
+END:VEVENT
+BEGIN:VEVENT
+UID:aux-meeting-2026-12-17@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261217T183000
+DTEND;TZID=America/New_York:20261217T193000
+SUMMARY:Auxiliary Meeting
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Monthly meeting of the Auxiliary to VFW Post 4651.\nMoved from 
+ the usual date (2026-12-31).
+END:VEVENT
+BEGIN:VEVENT
+UID:sunday-football@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20260913T120000
+DTEND;TZID=America/New_York:20260913T210000
+SUMMARY:Sunday Football at the Canteen
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:The canteen is open noon to 9 p.m. with the day's NFL games on\
+ , from the 1:00 kickoffs through the Sunday night game. See the Canteen pa
+ ge for this week's games\, food and prices.\nhttps://vfw4651.org/canteen.h
+ tml
+URL:https://vfw4651.org/canteen.html
+RRULE:FREQ=WEEKLY;BYDAY=SU;UNTIL=20270110T235959
+END:VEVENT
+BEGIN:VEVENT
+UID:post-0-2026-10-29@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261029T183000
+DTEND;TZID=America/New_York:20261029T213000
+SUMMARY:Feed Dating: Around the World in 8 Dates
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Culinary speed dating at the Post\, hosted by Chef Kimberly And
+ rade (Chef's Soulful Compass). Eight 10-minute dates over six internationa
+ lly inspired tasting courses. Limited to 8 women and 8 men\; 21+. $75 per 
+ person\, with an optional $5 donation to the Post\; tickets through Eventb
+ rite. The menu is fixed and cannot accommodate allergies or dietary restri
+ ctions.\nhttps://www.eventbrite.com/e/feed-dating-presents-around-the-worl
+ d-in-8-dates-culinary-speed-dating-tickets-2002246508205
+URL:https://www.eventbrite.com/e/feed-dating-presents-around-the-world-in-8
+ -dates-culinary-speed-dating-tickets-2002246508205
+END:VEVENT
+BEGIN:VEVENT
+UID:post-1-2026-10-30@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261030T200000
+DTEND;TZID=America/New_York:20261031T010000
+SUMMARY:'80s Halloween Party at the Post
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Back-to-the-'80s Halloween party inside the Post\, hosted by Je
+ ssica and Marissa. Costumes encouraged\, with music\, contests and prizes.
+END:VEVENT
+BEGIN:VEVENT
+UID:post-2-2026-11-05@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261105T183000
+DTEND;TZID=America/New_York:20261105T200000
+SUMMARY:The Dinner Circle: Night in New Orleans
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Three-course\, family-style dinner at the Post with Louisiana d
+ ishes\, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come sol
+ o\, with friends or as a date night\; 21+. $35 per person\; tickets throug
+ h Eventbrite. The menu is set\, so anyone with food allergies or dietary n
+ eeds should contact the chef before buying.\nhttps://www.eventbrite.com/e/
+ the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002
+ 247493151
+URL:https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-
+ a-seat-at-the-table-tickets-2002247493151
+END:VEVENT
+BEGIN:VEVENT
+UID:post-3-2026-11-05@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261105T190000
+DTEND;TZID=America/New_York:20261105T200000
+SUMMARY:Trivia Night at the Post
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Weekly trivia night at the Post\, hosted by Logiq & Kobi D. wit
+ h music by DJ Rukiz. Teams of four\, three rounds\, one winner each week\;
+  categories include music\, TV theme songs\, movies\, sports and general k
+ nowledge. Doors open at 7 p.m.\; trivia starts at 8. Free admission. The 1
+ 0-week season ends with a finale for a $500 prize.
+END:VEVENT
+BEGIN:VEVENT
+UID:post-4-2026-12-03@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261203T183000
+DTEND;TZID=America/New_York:20261203T200000
+SUMMARY:The Dinner Circle: Mexican Mercado
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Three-course\, family-style dinner at the Post with Mexican fav
+ orites\, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come so
+ lo\, with friends or as a date night\; 21+. $35 per person\; tickets throu
+ gh Eventbrite. The menu is set\, so anyone with food allergies or dietary 
+ needs should contact the chef before buying.\nhttps://www.eventbrite.com/e
+ /the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-200
+ 2247493151
+URL:https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-
+ a-seat-at-the-table-tickets-2002247493151
+END:VEVENT
+BEGIN:VEVENT
+UID:post-5-2026-12-10@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261210T183000
+DTEND;TZID=America/New_York:20261210T200000
+SUMMARY:The Dinner Circle: Italian Trattoria
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Three-course\, family-style dinner at the Post with Italian cla
+ ssics\, cooked by Chef Kimberly Andrade (Chef's Soulful Compass). Come sol
+ o\, with friends or as a date night\; 21+. $35 per person\; tickets throug
+ h Eventbrite. The menu is set\, so anyone with food allergies or dietary n
+ eeds should contact the chef before buying.\nhttps://www.eventbrite.com/e/
+ the-dinner-circle-good-food-great-company-a-seat-at-the-table-tickets-2002
+ 247493151
+URL:https://www.eventbrite.com/e/the-dinner-circle-good-food-great-company-
+ a-seat-at-the-table-tickets-2002247493151
+END:VEVENT
+BEGIN:VEVENT
+UID:post-6-2026-12-17@vfw4651.org
+DTSTAMP:20261025T184915Z
+DTSTART;TZID=America/New_York:20261217T183000
+DTEND;TZID=America/New_York:20261217T213000
+SUMMARY:Feed Dating: Around the World in 8 Dates
+LOCATION:VFW Post 4651\, 7 Haven Ave\, Cranston\, RI 02920
+DESCRIPTION:Culinary speed dating at the Post\, hosted by Chef Kimberly And
+ rade (Chef's Soulful Compass). Eight 10-minute dates over six internationa
+ lly inspired tasting courses. Limited to 8 women and 8 men\; 21+. $75 per 
+ person\, with an optional $5 donation to the Post\; tickets through Eventb
+ rite. The menu is fixed and cannot accommodate allergies or dietary restri
+ ctions.\nhttps://www.eventbrite.com/e/feed-dating-presents-around-the-worl
+ d-in-8-dates-culinary-speed-dating-tickets-2002246508205
+URL:https://www.eventbrite.com/e/feed-dating-presents-around-the-world-in-8
+ -dates-culinary-speed-dating-tickets-2002246508205
+END:VEVENT
+END:VCALENDAR
