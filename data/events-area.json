@@ -2,25 +2,6 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community. Post and Auxiliary events belong in data/events-post.json, not here. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
-      "title": "Varnum Armory Museum Free Open House",
-      "start": "2026-10-25T11:00",
-      "end": "2026-10-25T15:00",
-      "location": "Varnum Armory Museum, 6 Main Street, East Greenwich, RI 02818",
-      "category": "area",
-      "description": "Free open house at the Varnum Continentals' Armory Museum; no reservation needed.",
-      "url": "https://varnumcontinentals.org/armory-museum/tours/",
-      "source": "Varnum Continentals / Armory Museum"
-    },
-    {
-      "title": "A Concert for Freedom: Revolutionary Black & White Voices",
-      "start": "2026-10-25T16:00",
-      "location": "First Baptist Church in America, 75 North Main Street, Providence, RI",
-      "category": "area",
-      "description": "Free and open to the public. The Schiller Institute Chorus sings Revolutionary-era African American spirituals, with dramatic readings from the writings of Rhode Island patriots, writers and thinkers that bring out underrepresented voices in America's founding. Presented by Stages of Freedom with the RI 250 Commission as the closing event of Rhode Island's Semiquincentennial, with support from the RI State Council on the Arts.",
-      "url": "https://www.stagesoffreedom.org/concertforfreedom",
-      "source": "Stages of Freedom"
-    },
-    {
       "title": "Full Moon Hike (Weekend Warriors of New England)",
       "start": "2026-10-26T18:30",
       "end": "2026-10-26T20:30",
@@ -49,6 +30,16 @@
       "description": "Talk by Rose Island's Public History Program Manager, Michael J. Simpson, on Rose Island's role in the 1778 Rhode Island Campaign. Presented by the Rose Island Lighthouse and Fort Hamilton Trust as part of Rhode Island's Semiquincentennial programming.",
       "url": "https://rhodeisland250.org/event/defending-the-bay-rose-island-in-the-american-revolution/",
       "source": "Rose Island Lighthouse and Fort Hamilton Trust / RI250 Commission"
+    },
+    {
+      "title": "Women Veterans Coffee Social",
+      "start": "2026-11-03T10:00",
+      "end": "2026-11-03T11:00",
+      "location": "Café Namaste, 425 W Shore Rd, Warwick, RI 02889",
+      "category": "benefits",
+      "description": "Monthly coffee social for women veterans hosted by the RI Office of Veterans Services, to connect and build community.",
+      "url": "https://vets.ri.gov/events/women-veterans-coffee-social",
+      "source": "RI Office of Veterans Services"
     },
     {
       "title": "From Slaves to Soldiers: The 1st Rhode Island Regiment, with Robert A. Geake",
@@ -175,6 +166,16 @@
       "source": "VFW Post 449 (event flyer)"
     },
     {
+      "title": "Women Veterans Coffee Social",
+      "start": "2026-12-01T10:00",
+      "end": "2026-12-01T11:00",
+      "location": "Café Namaste, 425 W Shore Rd, Warwick, RI 02889",
+      "category": "benefits",
+      "description": "Monthly coffee social for women veterans hosted by the RI Office of Veterans Services, to connect and build community.",
+      "url": "https://vets.ri.gov/events/women-veterans-coffee-social",
+      "source": "RI Office of Veterans Services"
+    },
+    {
       "title": "British Soldiers' Wives in the American Revolution: A Talk with Author Don Hagist",
       "start": "2026-12-03T17:30",
       "end": "2026-12-03T18:30",
@@ -193,6 +194,36 @@
       "description": "Holiday party hosted by VFW Post 449.",
       "url": "https://beige-clownfish-tdkf.squarespace.com/events",
       "source": "VFW Post 449"
+    },
+    {
+      "title": "Women Veterans Coffee Social",
+      "start": "2027-01-05T10:00",
+      "end": "2027-01-05T11:00",
+      "location": "Café Namaste, 425 W Shore Rd, Warwick, RI 02889",
+      "category": "benefits",
+      "description": "Monthly coffee social for women veterans hosted by the RI Office of Veterans Services, to connect and build community.",
+      "url": "https://vets.ri.gov/events/women-veterans-coffee-social",
+      "source": "RI Office of Veterans Services"
+    },
+    {
+      "title": "Women Veterans Coffee Social",
+      "start": "2027-02-02T10:00",
+      "end": "2027-02-02T11:00",
+      "location": "Café Namaste, 425 W Shore Rd, Warwick, RI 02889",
+      "category": "benefits",
+      "description": "Monthly coffee social for women veterans hosted by the RI Office of Veterans Services, to connect and build community.",
+      "url": "https://vets.ri.gov/events/women-veterans-coffee-social",
+      "source": "RI Office of Veterans Services"
+    },
+    {
+      "title": "Women Veterans Coffee Social",
+      "start": "2027-03-02T10:00",
+      "end": "2027-03-02T11:00",
+      "location": "Café Namaste, 425 W Shore Rd, Warwick, RI 02889",
+      "category": "benefits",
+      "description": "Monthly coffee social for women veterans hosted by the RI Office of Veterans Services, to connect and build community.",
+      "url": "https://vets.ri.gov/events/women-veterans-coffee-social",
+      "source": "RI Office of Veterans Services"
     }
   ]
 }
