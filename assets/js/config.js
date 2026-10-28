@@ -10,7 +10,7 @@ window.SITE = {
   tagline: "Cranston, Rhode Island",
   address: ["7 Haven Ave", "Cranston, RI"],                 // ⚠ VERIFY (add zip)
   phone: "401-942-9768",                                   // ⚠ VERIFY
-  email: "",                                               // add a post email (e.g. commander@vfw4651.org)
+  email: "vfwpost4651@gmail.com",                          // confirmed by Bernard, Oct 28, 2026
   meetings: "Last Wednesday of each month, 6:00 p.m.",
   meetingTime: "6:00 p.m.",
 
