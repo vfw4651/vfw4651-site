@@ -12,7 +12,9 @@
       "location": "VFW Post 4651, 7 Haven Ave, Cranston, RI 02920",
       "from": "2026-10-01",
       "description": "Monthly meeting of the Post's members. Prospective members are welcome to come in and ask for an officer.",
-      "moves": {},
+      "moves": {
+        "2026-11-25": "2026-11-18"
+      },
       "skip": []
     },
     {
