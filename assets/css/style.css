@@ -403,3 +403,6 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 .campus-facts .kicker, .campus-facts h3, .campus-facts .facts li:nth-child(-n+3) { max-width: none; }
 .campus-facts .facts li { flex-direction: row; gap: 1rem; }
 @media (max-width: 520px) { .campus-facts .facts li { flex-direction: column; gap: .1rem; } }
+
+/* Campus: nearby memorial note (West Cranston Vietnam memorial) */
+.campus-nearby { margin: 1.5rem 0; max-width: 46rem; }
