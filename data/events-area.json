@@ -2,36 +2,6 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community. Post and Auxiliary events belong in data/events-post.json, not here. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
-      "title": "Full Moon Hike (Weekend Warriors of New England)",
-      "start": "2026-10-26T18:30",
-      "end": "2026-10-26T20:30",
-      "location": "Rhode Island (venue via organizer registration page)",
-      "category": "area",
-      "description": "Evening full moon hike for veterans hosted by Weekend Warriors of New England, listed on RI Office of Veterans Services' events calendar.",
-      "url": "https://vets.ri.gov/events/full-moon-hike-weekend-warriors-new-england-1",
-      "source": "RI Office of Veterans Services"
-    },
-    {
-      "title": "VA Providence Fall VetConnect",
-      "start": "2026-10-28T16:00",
-      "end": "2026-10-28T18:00",
-      "location": "VA Providence Healthcare System, 830 Chalkstone Avenue, Providence, RI",
-      "category": "benefits",
-      "description": "Veterans and families join VA Providence leadership for updates on programs and to connect with representatives from VA Enrollment and the Veterans Benefits Administration.",
-      "url": "https://discover.va.gov/events/va-providence-fall-vetconnect/",
-      "source": "VA Providence Health Care"
-    },
-    {
-      "title": "Defending the Bay: Rose Island in the American Revolution",
-      "start": "2026-10-28T18:00",
-      "end": "2026-10-28T19:00",
-      "location": "50 Bellevue Ave, Newport, RI",
-      "category": "area",
-      "description": "Talk by Rose Island's Public History Program Manager, Michael J. Simpson, on Rose Island's role in the 1778 Rhode Island Campaign. Presented by the Rose Island Lighthouse and Fort Hamilton Trust as part of Rhode Island's Semiquincentennial programming.",
-      "url": "https://rhodeisland250.org/event/defending-the-bay-rose-island-in-the-american-revolution/",
-      "source": "Rose Island Lighthouse and Fort Hamilton Trust / RI250 Commission"
-    },
-    {
       "title": "Women Veterans Coffee Social",
       "start": "2026-11-03T10:00",
       "end": "2026-11-03T11:00",
@@ -79,6 +49,16 @@
       "description": "Rhode Island Historical Society talk by author Andrew Waters on how Nathanael Greene's Rhode Island upbringing shaped his Revolutionary War leadership, focusing on his Race to the Dan retreat across the Carolinas. Registration through the event page.",
       "url": "https://www.rihs.org/event/nathanael-greene-rhode-island-and-the-race-to-the-dan-with-andrew-waters-2/",
       "source": "Rhode Island Historical Society"
+    },
+    {
+      "title": "VFW Post 449 BBQ",
+      "start": "2026-11-11",
+      "allDay": true,
+      "location": "VFW Post 449, 197 Providence Street, West Warwick, RI",
+      "category": "community",
+      "description": "Veterans Day barbecue cookout hosted by VFW Post 449, listed on the VFW Department of Rhode Island calendar.",
+      "url": "https://beige-clownfish-tdkf.squarespace.com/events",
+      "source": "VFW Post 449 / VFW Dept. of RI calendar"
     },
     {
       "title": "Veterans Day Free Dental Clinic for Veterans",
@@ -186,6 +166,16 @@
       "source": "Rhode Island Historical Society"
     },
     {
+      "title": "Colonial Yuletide and General Varnum's Birthday Salute",
+      "start": "2026-12-08",
+      "allDay": true,
+      "location": "James Mitchell Varnum House Museum, East Greenwich, RI",
+      "category": "area",
+      "description": "Holiday open house and birthday salute for General James Mitchell Varnum at the Varnum House Museum, hosted by the Varnum Continentals. Contact the Varnum Continentals (401-884-1776) to confirm hours.",
+      "url": "https://varnumcontinentals.org/december-8-colonial-yuletide-and-general-varnums-birthday-salute-at-james-mitchell-varnum-house-museum-east-greenwich/",
+      "source": "Varnum Continentals"
+    },
+    {
       "title": "VFW Post 449 Holiday Party",
       "start": "2026-12-11T16:30",
       "end": "2026-12-11T23:30",
@@ -196,6 +186,16 @@
       "source": "VFW Post 449"
     },
     {
+      "title": "Wreaths Across America Day — Rhode Island Veterans Memorial Cemetery",
+      "start": "2026-12-19",
+      "allDay": true,
+      "location": "Rhode Island Veterans Memorial Cemetery, 301 S County Trail, Exeter, RI",
+      "category": "area",
+      "description": "Rhode Island's wreath-laying ceremony as part of National Wreaths Across America Day, honoring veterans buried at the state Veterans Memorial Cemetery. Confirm the exact ceremony time closer to the date.",
+      "url": "https://vets.ri.gov/events/wreaths-across-america",
+      "source": "RI Office of Veterans Services / Wreaths Across America"
+    },
+    {
       "title": "Women Veterans Coffee Social",
       "start": "2027-01-05T10:00",
       "end": "2027-01-05T11:00",
@@ -204,6 +204,15 @@
       "description": "Monthly coffee social for women veterans hosted by the RI Office of Veterans Services, to connect and build community.",
       "url": "https://vets.ri.gov/events/women-veterans-coffee-social",
       "source": "RI Office of Veterans Services"
+    },
+    {
+      "title": "VFW Dept. of RI Council of Administration (COA) #3",
+      "start": "2027-01-09T10:00",
+      "location": "Woodrow L. Silvia VFW Post 5392, 134 Shove St., Tiverton, RI",
+      "category": "area",
+      "description": "VFW Department of Rhode Island Council of Administration meeting. Sign-in and coffee at 9:00 a.m., followed by a luncheon. Also available via Zoom.",
+      "url": "https://vfwri.org/di/vfw/v2/default.asp?pid=6015",
+      "source": "VFW Department of Rhode Island"
     },
     {
       "title": "Women Veterans Coffee Social",
@@ -224,6 +233,16 @@
       "description": "Monthly coffee social for women veterans hosted by the RI Office of Veterans Services, to connect and build community.",
       "url": "https://vets.ri.gov/events/women-veterans-coffee-social",
       "source": "RI Office of Veterans Services"
+    },
+    {
+      "title": "Encampment on the Grounds of Varnum House Museum",
+      "start": "2027-03-29",
+      "allDay": true,
+      "location": "James Mitchell Varnum House Museum, East Greenwich, RI",
+      "category": "area",
+      "description": "Living-history encampment hosted by the Varnum Continentals on the grounds of the Varnum House Museum. Contact the Varnum Continentals (401-884-1776) to confirm hours.",
+      "url": "https://varnumcontinentals.org/march-29-encampment-on-the-grounds-of-varnum-house-museum-east-greenwich/",
+      "source": "Varnum Continentals"
     }
   ]
 }
