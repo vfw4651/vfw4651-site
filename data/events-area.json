@@ -51,6 +51,16 @@
       "source": "Rhode Island Historical Society"
     },
     {
+      "title": "URI Veterans Day Observance",
+      "start": "2026-11-10T11:00",
+      "end": "2026-11-10T12:30",
+      "location": "URI Alumni Center, 73 Upper College Rd, Kingston, RI 02881",
+      "category": "area",
+      "description": "Veterans Day observance hosted by URI's Center for Military and Veteran Education (MAVE) at the Alumni Center.",
+      "url": "https://events.uri.edu/event/military-and-veteran-education-center-veterans-day-observance",
+      "source": "University of Rhode Island / MAVE"
+    },
+    {
       "title": "VFW Post 449 BBQ",
       "start": "2026-11-11",
       "allDay": true,
@@ -70,6 +80,16 @@
       "source": "Newport Family & Cosmetic Dentistry (event flyer)"
     },
     {
+      "title": "Veterans Day Food and Clothing Drive at the Museum of Work & Culture",
+      "start": "2026-11-11T09:30",
+      "end": "2026-11-11T16:00",
+      "location": "Museum of Work & Culture, 42 S Main St, Woonsocket, RI 02895",
+      "category": "benefits",
+      "description": "Donate a non-perishable food item, blanket, toiletries, or new clothing (socks, undershirts, underwear) for free museum admission on Veterans Day; all donations go to New Englanders Helping Our Veterans.",
+      "url": "https://www.rihs.org/event/veterans-day-food-and-clothing-drive-at-the-museum-of-work-and-culture/",
+      "source": "Rhode Island Historical Society"
+    },
+    {
       "title": "Varnum Armory Museum Free Open House (Veterans Day)",
       "start": "2026-11-11T11:00",
       "end": "2026-11-11T15:00",
@@ -78,6 +98,15 @@
       "description": "Free Veterans Day open house at the Varnum Continentals' Armory Museum; no reservation needed.",
       "url": "https://varnumcontinentals.org/armory-museum/tours/",
       "source": "Varnum Continentals / Armory Museum"
+    },
+    {
+      "title": "Woonsocket Veterans Day Observance",
+      "start": "2026-11-11T11:00",
+      "location": "United Veterans Council Armed Forces Park, Davison Ave, Woonsocket, RI 02895 (moves indoors to the Museum of Work & Culture, 42 S Main St, if weather is bad)",
+      "category": "area",
+      "description": "Annual Veterans Day observance hosted by the City of Woonsocket and the United Veterans Council of Woonsocket, broadcast live on WOON 1240 AM.",
+      "url": "https://vets.ri.gov/events/woonsocket-veterans-day-observance",
+      "source": "City of Woonsocket / United Veterans Council of Woonsocket"
     },
     {
       "title": "Cranston Veterans Day Parade",
