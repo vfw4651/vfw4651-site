@@ -2,6 +2,17 @@
   "_help": "Hand-curated outside events. Add one object per event. Times are local Eastern. Use \"allDay\": true and a date-only \"start\" (YYYY-MM-DD) for all-day events. category: area | benefits | community. Post and Auxiliary events belong in data/events-post.json, not here. Always include the organizer's page in \"url\" so members can confirm details.",
   "events": [
     {
+      "title": "The Cato Vernon Freedom Library (free exhibit)",
+      "start": "2026-10-03",
+      "end": "2026-11-22",
+      "allDay": true,
+      "location": "Vernon House, 46 Clarke Street, Newport, RI 02840",
+      "category": "area",
+      "description": "Free exhibit on Private Cato Vernon, a Black Revolutionary War soldier from Newport who enlisted in the 1st Rhode Island Regiment in 1778, fought at the Battle of Rhode Island, served through Yorktown and earned a Badge of Distinction. Open Tuesday through Sunday, 10 a.m.-5 p.m. A Veterans Day event honoring him is planned for November 11.",
+      "url": "https://centeraquidneck.com",
+      "source": "Center for Aquidneck / Newport Restoration Foundation (via RI Office of Veterans Services)"
+    },
+    {
       "title": "Women Veterans Coffee Social",
       "start": "2026-11-03T10:00",
       "end": "2026-11-03T11:00",
