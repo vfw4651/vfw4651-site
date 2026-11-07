@@ -142,8 +142,9 @@
       : `<div class="follow"><p>See photos and updates from the post on Instagram.</p><a class="btn navy" target="_blank" rel="noopener" href="${esc(L.instagram)}">Follow @${esc(L.instagramHandle)}</a></div>`;
     let fb;
     if (L.facebookPage) {
-      const src = "https://www.facebook.com/plugins/page.php?" + new URLSearchParams({ href: L.facebookPage, tabs: "timeline", width: "500", height: "600", small_header: "true", adapt_container_width: "true", hide_cover: "false", show_facepile: "false" });
-      fb = `<iframe title="Post 4651 on Facebook" src="${esc(src)}" height="600" loading="lazy" allow="encrypted-media"></iframe>` +
+      // Facebook's Page Plugin stopped showing the timeline (header only, then a blank box; seen Nov 6, 2026),
+      // so the panel is a plain link card rather than an embedded feed.
+      fb = `<div class="follow"><p>Announcements, event photos and news from the Post.</p><a class="btn navy" target="_blank" rel="noopener" href="${esc(L.facebookPage)}">Follow our Facebook Page</a></div>` +
         (FB_GROUP ? `<p class="note" style="margin:.75rem 0 0">Members and friends: join the conversation in our <a target="_blank" rel="noopener" href="${esc(FB_GROUP)}">Facebook group</a>.</p>` : "");
     } else {
       fb = `<div class="follow"><p>Join the conversation, RSVP and see announcements in our Facebook group.</p><a class="btn navy" target="_blank" rel="noopener" href="${esc(L.facebook)}">Open our Facebook group</a></div>`;
