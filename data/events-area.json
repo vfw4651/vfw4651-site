@@ -13,26 +13,6 @@
       "source": "Center for Aquidneck / Newport Restoration Foundation (via RI Office of Veterans Services)"
     },
     {
-      "title": "Women Veterans Coffee Social",
-      "start": "2026-11-03T10:00",
-      "end": "2026-11-03T11:00",
-      "location": "Café Namaste, 425 W Shore Rd, Warwick, RI 02889",
-      "category": "benefits",
-      "description": "Monthly coffee social for women veterans hosted by the RI Office of Veterans Services, to connect and build community.",
-      "url": "https://vets.ri.gov/events/women-veterans-coffee-social",
-      "source": "RI Office of Veterans Services"
-    },
-    {
-      "title": "From Slaves to Soldiers: The 1st Rhode Island Regiment, with Robert A. Geake",
-      "start": "2026-11-05T18:30",
-      "end": "2026-11-05T20:00",
-      "location": "North Kingstown Town Hall (2nd Floor), 80 Boston Neck Road, North Kingstown, RI",
-      "category": "area",
-      "description": "HistWick Speaker Series talk on the 1st Rhode Island Regiment — the Continental Army unit of African American and Native American enlisted men known as the Black Regiment — presented by historian and author Robert A. Geake.",
-      "url": "https://histwick.org/events/2026-11-05/",
-      "source": "HistWick"
-    },
-    {
       "title": "Westerly Veterans Day Parade",
       "start": "2026-11-07T09:30",
       "end": "2026-11-07T11:00",
@@ -72,6 +52,16 @@
       "source": "University of Rhode Island / MAVE"
     },
     {
+      "title": "Strangers in a Strange Land: A Talk on the Free African Union Movement, with Keith Stokes",
+      "start": "2026-11-10T18:00",
+      "end": "2026-11-10T19:30",
+      "location": "Vernon House, 46 Clarke Street, Newport, RI 02840",
+      "category": "area",
+      "description": "RI250 talk by historian Keith Stokes on the Free African Union Society, Newport's 1780 Black mutual-aid society, one of the earliest in the country. Free.",
+      "url": "https://rhodeisland250.org/event/strangers-in-a-strange-land-a-talk-on-the-free-african-union-movement-by-keith-stokes/",
+      "source": "Newport Restoration Foundation / RI250"
+    },
+    {
       "title": "VFW Post 449 BBQ",
       "start": "2026-11-11",
       "allDay": true,
@@ -101,6 +91,16 @@
       "source": "Rhode Island Historical Society"
     },
     {
+      "title": "Middletown Revolutionary War Memorial Dedication (with Veterans Day Ceremony)",
+      "start": "2026-11-11T11:00",
+      "end": "2026-11-11T12:00",
+      "location": "Paradise Valley Park, 265 Prospect Avenue, Middletown, RI 02842",
+      "category": "area",
+      "description": "Dedication of Middletown's Revolutionary War Memorial at the town's 250 Liberty Tree, held together with a Veterans Day ceremony.",
+      "url": "https://rhodeisland250.org/event/middletown-revolutionary-war-memorial-dedication/",
+      "source": "Middletown 250 Commission"
+    },
+    {
       "title": "Varnum Armory Museum Free Open House (Veterans Day)",
       "start": "2026-11-11T11:00",
       "end": "2026-11-11T15:00",
@@ -125,9 +125,49 @@
       "end": "2026-11-11T12:30",
       "location": "Starts on Doric Avenue behind the Pub on Park, along Park Avenue to Pontiac Avenue, north on Rolfe Street to Rolfe Square, followed by a ceremony at the Cannon Memorial, Cranston",
       "category": "area",
-      "description": "Annual Veterans Day parade and ceremony revived as a Cranston tradition. Time/route based on the 2025 running; check the city's page closer to the date for any changes.",
+      "description": "Annual Veterans Day parade and ceremony revived as a Cranston tradition. Time/route based on the 2025 running; the city had not posted a 2026-specific confirmation as of this check — confirm on the city's page closer to the date.",
       "url": "https://www.cranstonri.gov/veterans-day-parade/",
       "source": "City of Cranston"
+    },
+    {
+      "title": "The Trial of Fortune Stoddard: Race, Patriotism and Solidarity in Revolutionary Rhode Island",
+      "start": "2026-11-11T18:00",
+      "end": "2026-11-11T20:00",
+      "location": "Newport Vineyards, 909 East Main Road, Middletown, RI 02842",
+      "category": "area",
+      "description": "Lecture by historian Michael J. Simpson (JWU) on Fortune Stoddard, born enslaved in Middletown, who served in the 1st Rhode Island Regiment and won his freedom, drawing on military, court and census records. Free, cash bar. Organized by Middletown High School with an RI250 grant.",
+      "url": "https://rhodeisland250.org/event/the-trial-of-fortune-stoddard-race-patriotism-and-solidarity-in-revolutionary-rhode-island/",
+      "source": "Middletown High School / RI250"
+    },
+    {
+      "title": "Samuel Ward: Rhode Island's Patriot",
+      "start": "2026-11-11T18:30",
+      "end": "2026-11-11T20:30",
+      "location": "124 Granite Street, Westerly, RI",
+      "category": "area",
+      "description": "RI250 talk on Samuel Ward, Rhode Island's colonial governor and a delegate to the Continental Congress during the Revolutionary War.",
+      "url": "https://rhodeisland250.org/event/samuel-ward-rhode-islands-patriot/",
+      "source": "RI250 program"
+    },
+    {
+      "title": "Reflections on Soul Value and Research-to-Performance Method Writing, with April Brown and Jessica Pearson",
+      "start": "2026-11-13T14:00",
+      "end": "2026-11-13T16:00",
+      "location": "Vernon House, 46 Clarke Street, Newport, RI 02840",
+      "category": "area",
+      "description": "Conversation on \"Soul Value,\" a duet performance and research project about New England Black women and the men of the 1st Rhode Island Regiment.",
+      "url": "https://rhodeisland250.org/event/reflections-on-soul-value-and-research-to-performance-method-writing-a-conversation-with-april-brown-and-jessica-pearson/",
+      "source": "Newport Restoration Foundation / RI250"
+    },
+    {
+      "title": "Revolutionary War Veteran's Pension Transcription Program",
+      "start": "2026-11-14T11:00",
+      "end": "2026-11-14T12:30",
+      "location": "700 West Main Road, Middletown, RI",
+      "category": "area",
+      "description": "Drop-in transcription session for the pension files of Revolutionary War veterans and widows, part of a joint National Archives / National Park Service project covering over 80,000 files.",
+      "url": "https://rhodeisland250.org/event/revolutionary-war-veterans-pension-transcription-program-4/",
+      "source": "National Park Service / National Archives"
     },
     {
       "title": "VFW Post 449 Turkey Trot",
@@ -227,13 +267,12 @@
     },
     {
       "title": "Wreaths Across America Day — Rhode Island Veterans Memorial Cemetery",
-      "start": "2026-12-19",
-      "allDay": true,
+      "start": "2026-12-19T12:00",
       "location": "Rhode Island Veterans Memorial Cemetery, 301 S County Trail, Exeter, RI",
       "category": "area",
-      "description": "Rhode Island's wreath-laying ceremony as part of National Wreaths Across America Day, honoring veterans buried at the state Veterans Memorial Cemetery. Confirm the exact ceremony time closer to the date.",
-      "url": "https://vets.ri.gov/events/wreaths-across-america",
-      "source": "RI Office of Veterans Services / Wreaths Across America"
+      "description": "Rhode Island's wreath-laying ceremony as part of National Wreaths Across America Day, honoring veterans buried at the state Veterans Memorial Cemetery. Confirmed for 12:00 p.m., hosted by the New England Navy Nurse Corps Association, with wreath placement immediately following.",
+      "url": "https://www.wreathsacrossamerica.org/pages/175139",
+      "source": "Wreaths Across America / RI Office of Veterans Services"
     },
     {
       "title": "Women Veterans Coffee Social",
