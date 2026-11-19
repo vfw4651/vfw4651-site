@@ -427,3 +427,13 @@ footer .legal { border-top: 1px solid rgba(255,255,255,.15); margin-top: 2rem; p
 .ig-wide .panel { border: 0; background: transparent; }
 .ig-wide .panel header { display: none; }
 .ig-wide .panel .body { padding: 0; }
+
+/* How the Post Works page (how-we-work.html) */
+.steps { counter-reset: s; list-style: none; padding: 0; margin: 1rem 0 0; }
+.steps li { counter-increment: s; position: relative; padding: 0 0 1rem 3rem; }
+.steps li::before { content: counter(s); position: absolute; left: 0; top: -.1rem; width: 2.1rem; height: 2.1rem; border-radius: 50%; background: #0a2240; color: #fff; font-weight: 700; display: grid; place-items: center; }
+.steps li b { display: block; }
+.ref { color: #666; font-size: .85em; white-space: nowrap; }
+.rulebook { border-left: 5px solid #c9a24a; }
+.rulebook h3 { margin-top: 0; }
+.officer-list { columns: 2; padding-left: 1.2rem; }
